@@ -1,0 +1,79 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    inset: 0;
+    background-color: var(--couleur-des-articles);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .menu__list {
+    margin-top: 15vh;
+    text-align: center;
+    align-items: center;
+   
+  
+  }
+  
+  .menu__item {
+    margin-top: 5%;
+  }
+  
+  .menu__link {
+    color: var(--blanc);
+    text-decoration: none;
+  }
+  
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    
+  }
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: "";
+    background-color: var(--blanc);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+  .menu-btn--open .menu-btn__bar,
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    background-color: var(--blanc);
+    transform: rotate(135deg);
+  
+  }
+  
+  .menu-btn--open .menu-btn__bar::before,
+  .menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+  }

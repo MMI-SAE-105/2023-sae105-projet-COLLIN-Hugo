@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/fr/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article5.html">Réplique</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/contact.html">Contact</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+    <div class="hero">
+        <div class="hero__debut container">
+            <h1 class="hero__title">L'école des sortilèges</h1>
+            <figure class="hero__image">
+                <img src="/public/img/accueil.webp" alt="image d'accuiel">
+            </figure>
+        </div>
+    </div>
+<section class="intro__container">
+    <p class="intro__texte">Plongez dans la magie de Harry Potter</p>
+    <img src="/public/icones/pas-vert.svg">
+    <div>
+        <video controls src="/public/video/Vidéo FR.mp4" alt="vidéo de la réplique"></video>
+        <img src="/public/icones/contour-de-video.svg" alt="contour de vidéo">
+    </div>    
+</section>
+<section class="alaune__container">
+    <img src="/public/icones/logo-hedwidg.svg" alt="logo de Hedwidg">
+    <h2 class="alaune__titre">À la une</h2>
+    <div class="alaune__livre-hp">
+        <p>Par Hugo COLLIN</p>
+        <img src="/public/img/img-vignette-livre.webp" alt="image du livre Harry Potter, l'école des sorciers">
+        <h3>Harry Potter à l’école des sorciers : 
+            Le début de l’épopée magique
+        </h3>
+        <p class="alaune__texte">Premier livre d’une grande saga de film culte, 
+            écrit par J.K. Rowling où la magie prend vie et nous emporte 
+            dans un monde enchanté de sorcellerie et d'amitié.
+        </p>
+        <img src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+    <div class="alaune__film-hp">
+        <p>Par Hugo COLLIN</p>
+        <img src="/public/img/img-vignette-film.webp" alt="image du film Harry Potter, l'école des sorciers">
+        <h3>L’adaptation cinématographique d’un best-seller</h3>
+        <p class="alaune__texte">Le premier film Harry Potter, la magie prend vie à l'écran avec 
+            une aventure épique qui ensorcelle tous les spectateurs encore aujourd’hui.
+        </p>
+        <img src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+    <div class="alaune__musique-hp">
+        <p>Par Hugo COLLIN</p>
+        <img src="/public/img/img-vignette-musique.webp" alt="image musique: le prologue">
+        <h3>La magie du prologue par John Williams</h3>
+        <p class="alaune__texte">La baguette magique d'émotion qui ouvre l'univers d'Harry Potter 
+            au spectacle et qui nous a marqué tout le long de la saga.
+        </p>
+        <img src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+    <div class="alaune__chris">
+        <p>Par Hugo COLLIN</p>
+        <img src="/public/img/img-vignette-chris.webp" alt="image de Chris Columbus">
+        <h3>Chris Colombus : Le cinéaste derrière les épisodes magiques de Harry Potter</h3>
+        <p class="alaune__texte">Le réalisateur emblématique Chris Columbus amène la magie 
+            d'Harry Potter à l'écran, marquant le début d'un film épique.
+        </p>
+        <img src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+    <div class="alaune__hagrid">
+        <p>Par Hugo COLLIN</p>
+        <img src="/public/img/img-vignette-hagrid.webp" alt="image de Hagrid">
+        <h3>La réplique : « Tu es un sorcier, Harry ! »</h3>
+        <p class="alaune__texte">Cette réplique iconique est un moment inoubliable de la
+            saga Harry Potter. Prononcée par Rubeus Hagrid, elle ouvre la 
+            porte du monde magique à Harry.
+        </p>
+        <img src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+    <div class="parent__container">
+        <a href="/fr/deroulant.html" class="bouton">Voir plus</a>
+    </div>
+</section>
+<section class="apropos__container">
+    <img src="/public/icones/logo-hedwidg.svg" alt="logo de Hedwidg">
+    <h2 class="alaune__titre">À propos</h2>
+    <img src="/public/img/a-propos.webp">
+    <p>Ce projet est bien sûr basé sur des contraintes strictes. Notre site doit être fait pour une version mobile, 
+        en deux langues, le français et l’anglais pour toucher un public international. Nous devons également respecter 
+        un calendrier de rendu avec des temps de travail assez réduit. Le site doit être constitué du page d’accueil avec plusieurs éléments, 
+        notamment les articles principaux, la réplique emblématique ou encore une petite introduction.
+    </p>
+    <div class="parent__container">
+        <a href="/fr/deroulant.html" class="bouton">Voir plus</a>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+        </a>
+        <p class="footer__debut-texte">L'école des sortilèges</p>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4>MENTIONS LEGALES</h4>
+        <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+            <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+        </p>
+    </div>
+    <div class="footer__contact">
+        <h4>CONTACT</h4>
+        <p class="footer__texte">
+            hugo.collin@edu.univ-fcomte.com
+            +33 6 45 12 54 80
+            Département MMI Montébiard
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4>SUIVEZ-NOUS</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://www.facebook.com/" aria-label="facebook">
+                <img src="/public/icones/facebook.svg" alt="logo facebook">
+            </a></li>
+            <li><a href="https://www.instagram.com/" aria-label="instagram">
+                <img src="/public/icones/instagram.svg" alt="logo instagram">
+            </a></li>
+            <li><a href="https://twitter.com/" aria-label="twitter">
+                <img src="/public/icones/twitter.svg" alt="logo twitter">
+            </a></li>
+        </ul>
+        <img src="/public/icones/fleche-remonte.svg" alt="fleche remonte">
+     </div>
+     
+     <div class="footer__fin">
+        <img class="footer__fin-logo" src="/public/icones/logo-mmi.svg" alt="logo du département MMI">
+        <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+        <img class="footer__fin-pas" src="/public/icones/pas-rouge.svg" alt="pas rouge">
+     </div>
+
+    </div>
+</footer>
+    
+</body>
+</html>
