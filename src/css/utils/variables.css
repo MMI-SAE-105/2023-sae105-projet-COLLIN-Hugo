@@ -1,0 +1,23 @@
+:root {
+/* Color styles */
+--couleur-des-articles: rgba(1, 12, 28, 1);
+--couleur-texte: rgba(180, 184, 0, 1);
+--noir: rgba(31, 30, 30, 1);
+--blanc: rgba(250, 250, 250, 1);
+--couleur-footer: rgba(215, 214, 213, 1);
+--gris-foncé: rgba(102, 100, 98, 1);
+--couleur-de-fond: rgba(6, 32, 71, 1);
+--vert: rgba(13, 101, 32, 1);
+--bleu: rgba(11, 95, 167, 1);
+
+/* Text-size styles */
+--heading-1: 48px;
+--heading-2: 36px;
+--heading-3: 24px;
+--heading-4: 16px;
+--body-1: 30px;
+--body-2: 22px;
+--body-3: 12px;
+--body-4: 9px;
+--text-uppercase: 12px;
+}
