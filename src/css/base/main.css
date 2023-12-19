@@ -15,7 +15,7 @@ body {
   line-height: 160%;
 }
 h1 {
-  font-family: 'harry p';
+  font-family: 'harry_pregular';
   font-size: var(--heading-1);
   color: var(--couleur-texte);
   margin-top: 30px;
@@ -23,7 +23,7 @@ h1 {
   line-height: 120%;
 }
 h2 {
-    font-family: 'harry p';
+    font-family: 'harry_pregular';
     font-size: var(--heading-2);
     color: var(--blanc);
     margin-top: 1px;
