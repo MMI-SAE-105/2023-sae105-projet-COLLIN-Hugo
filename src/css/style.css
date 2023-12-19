@@ -24,6 +24,7 @@
 @import "components/menuTheme.css";
 @import "components/presentation-article.css";
 @import "components/icone.css";
+@import "components/vignette.css";
 
 @font-face {
     font-family: 'harry_pregular';

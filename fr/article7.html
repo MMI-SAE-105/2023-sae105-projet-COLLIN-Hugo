@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ atTop: true}">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
+<div class="header__start">
+    <a href="/fr/index.html">
+    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+    </a>
+</div>
+<div class="header__end">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+        @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+    </button>
+<nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+    </ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="container">
+<h1>John Williams : Maestro de la Composition Musicale au Cinema</h1>
+    <p>Compositeur légendaire, transcende le cinéma avec des œuvres iconiques comme la magique bande origi- nale d'Harry Potter. 
+        Sa musique captive l'émotion et forge son héritage dans la culture populaire.
+    </p>
+<div class="figure__img">
+    <img src="/public/img/img-article-7.webp" alt="image de John Williams">
+    <figcaption class="figure__legende">Image de Nicolas Poinsot, le 16 frévrier 2023 à 12H00
+    </figcaption>
+</div>
+    <h4>L'ascension</h4>
+    <p>Dans le monde de la musique de film, le nom de John Williams brille comme une star. 
+        C'est un compositeur dont l’œuvre dépasse les frontières du cinéma. Il fait désormais partie intégrante 
+        de la culture populaire. Williams est largement connu pour de nombreuses œuvres emblématiques, 
+        dont la plus célèbre est la bande originale des histoires de Harry Potter.
+    </p>
+    <h4>Le maestro</h4>
+    <p>La série à succès Harry Potter captive des millions de lecteurs de tous âges depuis 1997. 
+        L’auteure a fait de ses livres une série incontournable. Rowling réussi dans toute la saga 
+        à mélanger habilement des thèmes universels tels que l'amitié, le courage et la lutte contre le mal 
+        avec une intrigue magique et captivante.
+    </p>
+    <h4>Enchanté</h4>
+    <p>Le prologue inoubliable d'Harry Potter dans le premier film de la série, est l'un des moments les plus mémorable de la série. 
+        Ici, John Williams a utilisé tous ses talents pour capturer l'esprit magique de J.K. Rowling. 
+        Une musique mélodique et captivante accompagne les spectateurs dans un voyage épique et les entraîne 
+        instantanément dans un monde magique.
+    </p>
+    <h4>L'emprise magique</h4>
+    <p>La composition de Williams évoque un sentiment de mystère et d'aventure, tout en incorporant des thèmes musicaux 
+        mémorables pour chaque personnage. De l'intrigue au danger, en passant par l’amitié et le courage, 
+        la partition de Williams capture avec précision les émotions et les enjeux de l'histoire de Harry Potter.<br>
+        <br>
+        Le succès de Harry Potter « Prologue » est un exemple de la manière dont John Williams donne vie aux histoires à 
+        travers la musique. John Williams a la capacité de faire ressentir aux spectateurs toutes les nuances émotionnelles, 
+        de le transporter dans un monde fantastique et de le laisser bouche bée.
+    </p>
+    <h4>Légendaire</h4>
+    <p>Outre Harry Potter, John Williams a composé des musiques de films emblématiques pour de nombreux films, dont Star Wars, 
+        Indiana Jones, E.T.l’extra-terrestres et bien d’autres encore. Ses mélodies sont profondément ancrées 
+        dans les mémoires des gens et ravissent les auditeurs de toute génération.
+    </p>
+    <h4>Héritage</h4>
+    <p>Le travail de John Williams est un rappel constant de la puissance de la musique pour renforcer l'impact du cinéma 
+        et de la narration. Sa contribution à l'univers cinématographique est inestimable, et son héritage musical 
+        perdurera longtemps après sa carrière.
+    </p>
+</div>
+<div class="container__vignette">
+    <a href="https://fr.wikipedia.org/wiki/John_Williams_(compositeur)">
+    <div class="vignette">
+    <p class="vignette__titre">JOHN WILLIAMS</p>
+    <p class="vignette__texte">Compositeur de musique célèbre pour ses bandes originales de films emblématiques.</p>
+    <img class="vignette__plus-info" src="/public/icones/plus-info.svg" alt="plus d'informations">
+    </div>
+</div>
+</a>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+        </a>
+        <h4 class="footer__debut-texte">L'école des sortilèges</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__titre">MENTIONS LEGALES</h4>
+        <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+            <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+        </p>
+    </div>
+    <div class="footer__contact">
+        <h4 class="footer__titre">CONTACT</h4>
+        <p class="footer__texte">
+            hugo.collin@edu.univ-fcomte.com<br>
+            +33 6 45 12 54 80<br>
+            Département MMI Montébiard
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__titre">SUIVEZ-NOUS</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://www.facebook.com/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+            </a></li>
+            <li><a href="https://www.instagram.com/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+            </a></li>
+            <li><a href="https://twitter.com/" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+            </a></li>
+            <li><a href="https://youtube.com" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+            </a></li>
+        </ul>
+        <a class="hero__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+     </div>
+     <div class="footer__fin">
+        <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
+        <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>
