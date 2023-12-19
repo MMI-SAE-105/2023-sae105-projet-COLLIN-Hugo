@@ -27,17 +27,17 @@ h2 {
     font-size: var(--heading-2);
     color: var(--blanc);
     margin-top: 1px;
-    margin-bottom: 40px;
+    margin-bottom: -50px;
     line-height: 120%;
     text-align: center;
+
 }
 h4 {
     font-family: 'noto sans', sans-serif;
     font-size: var(--heading-4);
     color: var(--couleur-texte);
     margin-top: 30px;
-    margin-bottom: 10px;
-    margin-bottom: 1px;
+    margin-bottom: -7px;
     margin-left: 0;
 }
 figure {

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ atTop: true}">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
+<div class="header__start">
+    <a href="/fr/index.html">
+    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+    </a>
+</div>
+<div class="header__end">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+        @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+    </button>
+<nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+    </ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="container">
+<h1>Chris Columbus : Le cinéaste derrière les épisodes magiques de Harry Potter</h1>
+    <p>Chris Columbus, le réalisateur de Harry Potter, avec son talent et son souci du détail, 
+    a su apporter la magie des livres à l'écran, en captivant les fans du monde entier.
+    </p>
+<div class="figure__img">
+    <img src="/public/img/img-article-4.webp" alt="image de Chris Columbus">
+    <figcaption class="figure__legende">Photo par Getty Images / 
+        Grant Lamos IV / Photographe
+    </figcaption>
+</div>
+    <h4>Épopée</h4>
+    <p>La magie d'Harry Potter ne se limite pas aux livres de J.K. Rowling. Elle a également conquis le monde du cinéma 
+        grâce à un homme : le réalisateur Chris Columbus. Grâce à son talent et à sa clairvoyance, il entreprend donc 
+        la tâche difficile de transformer une histoire littéraire en une série de films inoubliables.
+    </p>
+    <h4>Exploration</h4>
+    <p>Chris Columbus est déjà à cette époque un réalisateur de très grande renommée à Hollywood. 
+        Son succès est dû à certains films cultes tels que « Maman, j'ai raté l'avion » ou encore 
+        « Percy Jackson : le voleur de foudre ». Cependant, Harry Potter présente un tout nouveau défi. 
+        Il s'agit d'explorer l'univers complexe, magique et sombre dépeint par J.K. Rowling afin d’y donner vie.
+    </p>
+    <h4>Visionnaire</h4>
+    <p>Columbus a été confronté à de nombreux problèmes notamment pour le choix des acteurs pour incarner les personnes de la saga. 
+        Il réussit à trouver de jeunes talents tels que Daniel Radcliffe, Rupert Grint et Emma Watson dans les rôles principaux. 
+        L'attention portée aux détails par le cinéaste est essentielle à l’atmosphère magique de Poudlard. 
+        Les décors, les costumes ainsi que les effets spéciaux contribuent à donner vie à l’école des sorciers. 
+        Des dortoirs de Gryffondor* à la Grande Salle, chaque pièce est détaillée et pleine de magie tout le long du film.
+        Le film sorti en 2001, a un succès total et conquis le cœur des fans de Harry Potter du monde entier. 
+        Chris Columbus réussit alors à créer une voie à une incroyable série de 8 films au totale.
+    </p>
+    <h4>Ensorcellement</h4>
+    <p>Le point de départ de cette saga emblématique est bien sûr le travail de son réalisateur, 
+        Chris Columbus et de son équipe sur le film « Harry Potter à l’école des sorciers ». 
+        Grâce à son l’immense talent et à son ancienneté dans le monde du cinéma, il a pu porter à l’écran la magie de Harry Potter, 
+        permettant ainsi au public de vivre les aventures de Potter.
+    </p>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+        </a>
+        <h4 class="footer__debut-texte">L'école des sortilèges</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__titre">MENTIONS LEGALES</h4>
+        <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+            <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+        </p>
+    </div>
+    <div class="footer__contact">
+        <h4 class="footer__titre">CONTACT</h4>
+        <p class="footer__texte">
+            hugo.collin@edu.univ-fcomte.com<br>
+            +33 6 45 12 54 80<br>
+            Département MMI Montébiard
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__titre">SUIVEZ-NOUS</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://www.facebook.com/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+            </a></li>
+            <li><a href="https://www.instagram.com/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+            </a></li>
+            <li><a href="https://twitter.com/" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+            </a></li>
+            <li><a href="https://youtube.com" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+            </a></li>
+        </ul>
+        <a class="hero__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+     </div>
+     <div class="footer__fin">
+        <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
+        <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>

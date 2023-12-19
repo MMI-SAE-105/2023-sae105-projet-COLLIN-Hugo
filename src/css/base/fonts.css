@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'harry_pregular';
-    src: url('/src/fonts/harryp.woff2') format('woff2'),
-        url('/src/fonts/harryp.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}

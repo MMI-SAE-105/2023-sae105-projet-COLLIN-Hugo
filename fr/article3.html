@@ -9,158 +9,162 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="{ atTop: true}">
-    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
-        :class="{ 'header--atTop' : }">
-        <div class="header__start">
-          <a href="/fr/index.html">
-            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
-          </a>
-        </div>
-        <div class="header__end">
-          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-            <span class="menu-btn__bar"></span>
-          </button>
-          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled">
-              <li class="menu__item">
-                <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/fr/article5.html">Réplique</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/fr/article7.html">John Williams</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/fr/a-propos.html">À propos</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/fr/contact.html">Contact</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
+<div class="header__start">
+    <a href="/fr/index.html">
+    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+    </a>
+</div>
+<div class="header__end">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+    @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+    </ul>
+    </nav>
+</div>
 </header>
 <main>
-    <div class="container">
-        <h1>La magie du prologue par John Williams</h1>
-        <p>John Williams, le maestro de la magie musicale, nous transporte dans l'univers fantastique de Harry Potter. 
-            Sa musique évoque avec brio des émotions complexes dans le prologue du premier film, créant une expérience 
-            sensorielle captivante dès les premières notes.
-        </p>
-        <div class="figure__img">
-            <img src="/public/img/img-article-3.webp" alt="image de musique">
-            <figcaption class="figure__legende">Image provenant du site « iStockPhoto.com »
-            </figcaption>
+<div class="container">
+    <h1>La magie du prologue par John Williams</h1>
+    <p>John Williams, le maestro de la magie musicale, nous transporte dans l'univers fantastique de Harry Potter. 
+    Sa musique évoque avec brio des émotions complexes dans le prologue du premier film, créant une expérience 
+    sensorielle captivante dès les premières notes.
+    </p>
+<div class="figure__img">
+    <img src="/public/img/img-article-3.webp" alt="image de musique">
+    <figcaption class="figure__legende">Image provenant du site « iStockPhoto.com »
+    </figcaption>
+</div>
+    <h4>L'envoûtement</h4>
+    <p>John Williams réussit avec toutes ses musiques de transporter les spectateurs dans un monde fantastique. 
+        Il réussit à évoquer différentes émotions. C’est effectivement le cas dans le premier volume de la saga Harry Potter, 
+        « Harry Potter à l’école des sorciers ». Sa musique « le prologue » joue un rôle important dès le début.
+    </p>
+    <h4>Magie Symphonique</h4>
+    <p>En effet, au début du film, cette musique nous entraîne dans l’univers magique de Harry Potter. 
+        Des mélodies envoûtantes et mystiques évoquent à la fois l’excitation de l’aventure à venir et 
+        le mystère entourant le monde magique. Les cordes et les cuivres créent une atmosphère enchanteresse, 
+        tandis qu'un chœur ajoute une atmosphère solennelle.
+        Le prologue musical sert d'introduction à l'histoire, nous présentant la famille Dursley, 
+        qui mène une vie ordinaire et sans surprise. Cependant, lorsque le professeur Dumbledore et le professeur 
+        McGonagall* apparaissent à Privet Drive*, la musique prend un tournant. Les thèmes musicaux distinctifs 
+        associés à ces personnages contribuent à établir leur importance et leur singularité.
+    </p>
+    <h4>La destinée</h4>
+    <p>Lorsque Harry, est laissé devant la porte des Dursley, la musique se fait à la fois mélancolique et pleine d'espoir. 
+        Elle évoque la solitude et le destin incertain de Harry, mais aussi son potentiel extraordinaire. 
+        La combinaison de ces émotions complexes dans la musique est le reflet de l'histoire de Harry lui-même, 
+        un garçon ordinaire destiné à devenir un sorcier extraordinaire.
+    </p>
+    <h4>Éblouissement</h4>
+    <p>La musique du prologue ne se contente pas d'accompagner l'histoire, elle la renforce. 
+        Elle souligne les moments d’émerveillement, de découverte et de magie tout au long du film. 
+        Lorsque, Harry monte pour la première fois à bord du Poudlard Express* et aperçoit le château de Poudlard, 
+        la musique s'enflamme, créant une véritable expérience sensorielle pour les spectateurs.
+    </p>
+    <h4>L'enchantement</h4>
+    <p>John Williams a su capturer l'essence d'Harry Potter dans sa musique. Ses thèmes mémorables sont indissociables 
+        de ceux de J.K. Rowling continue d'inspirer et d'étonner les fans du monde entier. 
+        La musique du prologue du premier film est une introduction magique à un voyage extraordinaire, 
+        une invitation à s'immerger dans un monde où la musique elle-même joue un rôle important dans l'histoire. 
+        Elle incarne la magie et l'imagination, transportant les auditeurs dans un univers où tout est possible.
+    </p>
+    <div class="container__hedwig">
+        <img class="container__hedwig-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+        <h2>En savoir plus</h2>
+    </div>
+    <div class="article">
+        <a href="/fr/article7.html">
+        <div class="content">
+            <p class="byline">Par COLLIN Hugo</p>
+            <img class="author" src="/public/img/img-vignette-john.webp" alt="photo de John Williams">
+            <h3 class="titre">John Williams : Maestro de la Composition Musicale au Cinéma</h3>
+            <p class="description">Compositeur légendaire, célèbre pour la magique bande originale d'Harry Potter. 
+            Sa musique forge son héritage dans la culture populaire.
+            </p>
+            <img class="article__plus-info" src="/public/icones/plus-info.svg"></a>
         </div>
-            <h4>Envoûtement</h4>
-            <p>John Williams réussit avec toutes ses musiques de transporter les spectateurs dans un monde fantastique. 
-                Il réussit à évoquer différentes émotions. C’est effectivement le cas dans le premier volume de la saga Harry Potter, 
-                « Harry Potter à l’école des sorciers ». Sa musique « le prologue » joue un rôle important dès le début.
-            </p>
-            <h4>Magie Symphonique</h4>
-            <p>L'histoire débute avec le jeune orphelin nommé Harry Potter, dont les parents ont été tués par son ennemi, 
-                Voldemort. Harry se retrouve dès son plus jeune âge chez sa tante et son oncle, les Dursley. 
-                Il mène une vie misérable jusqu’au jour où il reçoit la lettre d'admission à Poudlard*, une école de sorcellerie. 
-                Rubeus Hagrid*, futur ami de Harry, est celui qui prononce la réplique emblématique : "Tu es un sorcier, Harry !". 
-                Cette simple phrase marque le début de l'épopée magique de Harry. C’est à ce moment là où il découvre son héritage 
-                et son potentiel dans le monde des sorciers à Poudlard.
-            </p>
-            <h4>Enchantement</h4>
-            <p>C’est dans cet endroit que se passent la plupart de la saga et où les lecteurs vont voir grandir le jeune Potter. 
-                Il découvre l'univers fascinant de la magie. Les lecteurs sont transportés dans un monde où la magie opère, 
-                où les balais volent, et où des créatures fantastiques errent dans la forêt interdite. Chaque page du livre est 
-                imprégnée de détails et d'imagination de J.K. Rowling, créant un univers complexe et merveilleux.<br>
-                Le succès du premier volume est phénoménal, l’œuvre est connue dans le monde entier. Il a non seulement inspiré une série de livres, 
-                mais également une franchise cinématographique qui captive encore aujourd’hui le public du monde entier. Des répliques sont 
-                encore très connues comme les paroles de Dumbledore* : « Le bonheur peut être trouvé même dans les moments les plus sombres, 
-                il suffit de se souvenir d'allumer la lumière ».
-            </p>
-            <h4>Éternité</h4>
-            <p>"Harry Potter à l'école des sorciers", est bien plus qu'une histoire pour enfants, car l’ensemble de la saga est destiné à un public varié. 
-                Ce premier tome a marqué le monde de la littérature et du cinéma. Encore aujourd’hui, Harry Potter continue à émerveiller 
-                les lecteurs du monde entier.
-            </p>
-            <div class="container__hedwig">
-                <img class="container__hedwig-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
-                <h2>En savoir plus</h2>
-            </div>
-            <div class="article">
-                <a href="/fr/article6.html">
-                <div class="content">
-                  <p class="byline">Par COLLIN Hugo</p>
-                  <img class="author" src="/public/img/img-vignette-jkr.webp" alt="J.K. Rowling">
-                  <h3 class="titre">J.K. Rowling : Au-delà de Poudlard, une écrivaine polyvalente</h3>
-                  <p class="description">J.K. Rowling, l'auteure de Harry Potter, a créé un monde magique, vendu 500M+ livres, et suscité des débats avec ses opinions sur le genre.</p>
-                  <img class="article__plus-info" src="/public/icones/plus-info.svg"></a>
-                </div>
-                </a>
-            </div>
-            <div class="container__hedwig">
-                <img class="container__hedwig-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
-                <h2>Autres livres</h2>
-            </div>
-
+        </a>
+    </div>
+</div>
 </main>
 <footer class="footer">
-    <div class="footer__logolink">
-        <a href="/fr/index.html">
-            <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
-        </a>
-        <h4 class="footer__debut-texte">L'école des sortilèges</h4>
-    </div>
-    <div class="footer__mentionslegales">
-        <h4 class="footer__titre">MENTIONS LEGALES</h4>
-        <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
-            <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
-        </p>
-    </div>
-    <div class="footer__contact">
-        <h4 class="footer__titre">CONTACT</h4>
-        <p class="footer__texte">
-            hugo.collin@edu.univ-fcomte.com<br>
-            +33 6 45 12 54 80<br>
-            Département MMI Montébiard
-        </p>
-    </div>
-    <div class="footer__social">
-        <h4 class="footer__titre">SUIVEZ-NOUS</h4>
-        <ul class="footer__liste list-unstyled">
-            <li><a href="https://www.facebook.com/" aria-label="facebook">
-                <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
-            </a></li>
-            <li><a href="https://www.instagram.com/" aria-label="instagram">
-                <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
-            </a></li>
-            <li><a href="https://twitter.com/" aria-label="twitter">
-                <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
-            </a></li>
-            <li><a href="https://youtube.com" aria-label="youtube">
-                <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
-            </a></li>
-        </ul>
-        <a class="hero__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
-     </div>
-     <div class="footer__fin">
-        <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
-        <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
-     </div>
+<div class="footer__logolink">
+    <a href="/fr/index.html">
+        <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+    </a>
+    <h4 class="footer__debut-texte">L'école des sortilèges</h4>
+</div>
+<div class="footer__mentionslegales">
+    <h4 class="footer__titre">MENTIONS LEGALES</h4>
+    <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+    </p>
+</div>
+<div class="footer__contact">
+    <h4 class="footer__titre">CONTACT</h4>
+    <p class="footer__texte">
+        hugo.collin@edu.univ-fcomte.com<br>
+        +33 6 45 12 54 80<br>
+        Département MMI Montébiard
+    </p>
+</div>
+<div class="footer__social">
+    <h4 class="footer__titre">SUIVEZ-NOUS</h4>
+    <ul class="footer__liste list-unstyled">
+        <li><a href="https://www.facebook.com/" aria-label="facebook">
+            <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+        </a></li>
+        <li><a href="https://www.instagram.com/" aria-label="instagram">
+            <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+        </a></li>
+        <li><a href="https://twitter.com/" aria-label="twitter">
+            <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+        </a></li>
+        <li><a href="https://youtube.com" aria-label="youtube">
+            <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+        </a></li>
+    </ul>
+    <a class="hero__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+</div>
+<div class="footer__fin">
+    <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
+    <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+</div>
 </footer>
 </body>
 </html>
