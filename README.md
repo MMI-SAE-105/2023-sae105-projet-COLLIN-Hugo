@@ -1,6 +1,6 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
+- NOM : Collin
+- PRÉNOM : Hugo
+- URL du site : https://l-ecole-des-sortileges.hugo-collin.fr
 - URL FIGMA :
 
 # Structure de départ pour le projet individuel.

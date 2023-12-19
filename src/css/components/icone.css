@@ -1,0 +1,7 @@
+.container__hedwig-icone {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+    margin-top: 6rem;
+}
