@@ -1,18 +1,14 @@
-@font-face {
-    font-family: 'harry_pregular';
-    src: url('harryp__-webfont.woff2') format('woff2'),
-         url('harryp__-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,700;1,300;1,700&family=Space+Mono:ital@0;1&display=swap");
+/* Vendors */
 
 /* Vendors */
 @import "vendors/normalize.css";
 
 /* Utils */
 @import "utils/variables.css";
+
 
 /* Base */
 @import "base/main.css";
@@ -31,3 +27,10 @@
 
 
 
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('/src/fonts/harryp.woff2') format('woff2'),
+        url('/src/fonts/harryp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
