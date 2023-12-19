@@ -21,3 +21,7 @@
 @import "components/menuTheme.css";
 @import "components/presentation-article.css";
 @import "components/icone.css";
+
+/* fonts */
+@import "fonts/font.css";
+
