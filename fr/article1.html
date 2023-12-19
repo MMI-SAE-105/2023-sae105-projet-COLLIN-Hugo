@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/fr/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article5.html">Réplique</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/contact.html">Contact</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<div class="container">
+    <h1>Harry Potter à l’école des sorciers : Le début de l’épopée magique</h1>
+    <p>Dans ce premier volume d’Harry Potter, le jeune orphelin, découvre le monde des sorciers 
+        à Poudlard, marquant le début d'une grande histoire de magie. Une œuvre littéraire 
+        iconique qui émerveillement toutes les générations.
+    </p>
+    <div class="figure__img">
+        <img src="/public/img/img-article-1.webp" alt="Harry, Rom, Hermione">
+        <figcaption class="figure__legende">Image tirée du film Harry Potter 
+            « Harry Potter à l’école des sorciers », en 2001.
+        </figcaption>
+    </div>
+        <h4>Magie</h4>
+        <p>En 1997, la sortie du premier livre, laisse le monde littéraire fasciné par un jeune sorcier 
+            nommé Harry Potter, dont son aventure commence avec le premier volume « Harry Potter à l’école 
+            des sorciers ». Il s’agit du début d’une grande saga de 7 livres. Cette œuvre magique 
+            écrite par l’autrice J.K. Rowling réussi à réunir les lecteurs de tous âges, 
+            et dont ses livres sont encore très connus aujourd’hui. L’autrice donne même naissance 
+            à une série de films incontournable.
+        </p>
+        <h4>Révélation</h4>
+        <p>L'histoire débute avec le jeune orphelin nommé Harry Potter, dont les parents ont été tués par son ennemi, 
+            Voldemort. Harry se retrouve dès son plus jeune âge chez sa tante et son oncle, les Dursley. 
+            Il mène une vie misérable jusqu’au jour où il reçoit la lettre d'admission à Poudlard*, une école de sorcellerie. 
+            Rubeus Hagrid*, futur ami de Harry, est celui qui prononce la réplique emblématique : "Tu es un sorcier, Harry !". 
+            Cette simple phrase marque le début de l'épopée magique de Harry. C’est à ce moment là où il découvre son héritage 
+            et son potentiel dans le monde des sorciers à Poudlard.
+        </p>
+        <h4>Enchantement</h4>
+        <p>C’est dans cet endroit que se passent la plupart de la saga et où les lecteurs vont voir grandir le jeune Potter. 
+            Il découvre l'univers fascinant de la magie. Les lecteurs sont transportés dans un monde où la magie opère, 
+            où les balais volent, et où des créatures fantastiques errent dans la forêt interdite. Chaque page du livre est 
+            imprégnée de détails et d'imagination de J.K. Rowling, créant un univers complexe et merveilleux.<br>
+            Le succès du premier volume est phénoménal, l’œuvre est connue dans le monde entier. Il a non seulement inspiré une série de livres, 
+            mais également une franchise cinématographique qui captive encore aujourd’hui le public du monde entier. Des répliques sont 
+            encore très connues comme les paroles de Dumbledore* : « Le bonheur peut être trouvé même dans les moments les plus sombres, 
+            il suffit de se souvenir d'allumer la lumière ».
+        </p>
+        <h4>Éternité</h4>
+        <p>"Harry Potter à l'école des sorciers", est bien plus qu'une histoire pour enfants, car l’ensemble de la saga est destiné à un public varié. 
+            Ce premier tome a marqué le monde de la littérature et du cinéma. Encore aujourd’hui, Harry Potter continue à émerveiller 
+            les lecteurs du monde entier.
+        </p>
+        <div class="article">
+            <a href="/fr/article6.html">
+            <div class="content">
+              <p class="byline">Par COLLIN Hugo</p>
+              <img class="author" src="/public/img/img-vignette-jkr.webp" alt="J.K. Rowling">
+              <h3 class="titre">J.K. Rowling : Au-delà de Poudlard, une écrivaine polyvalente</h3>
+              <p class="description">J.K. Rowling, l'auteure de Harry Potter, a créé un monde magique, vendu 500M+ livres, et suscité des débats avec ses opinions sur le genre.</p>
+              <img class="article__plus-info" src="/public/icones/plus-info.svg"></a>
+            </div>
+            </a>
+        </div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+        </a>
+        <p class="footer__debut-texte">L'école des sortilèges</p>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4>MENTIONS LEGALES</h4>
+        <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+            <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+        </p>
+    </div>
+    <div class="footer__contact">
+        <h4>CONTACT</h4>
+        <p class="footer__texte">
+            hugo.collin@edu.univ-fcomte.com
+            +33 6 45 12 54 80
+            Département MMI Montébiard
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4>SUIVEZ-NOUS</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://www.facebook.com/" aria-label="facebook">
+                <img src="/public/icones/facebook.svg" alt="logo facebook">
+            </a></li>
+            <li><a href="https://www.instagram.com/" aria-label="instagram">
+                <img src="/public/icones/instagram.svg" alt="logo instagram">
+            </a></li>
+            <li><a href="https://twitter.com/" aria-label="twitter">
+                <img src="/public/icones/twitter.svg" alt="logo twitter">
+            </a></li>
+            <li><a href="https://youtube.com" aria-label="youtube">
+                <img src="/public/icones/youtube.svg" alt="logo youtube">
+            </a></li>
+        </ul>
+        <img src="/public/icones/fleche-remonte.svg" alt="fleche remonte">
+     </div>
+     
+     <div class="footer__fin">
+        <img class="footer__fin-logo" src="/public/icones/logo-mmi.svg" alt="logo du département MMI">
+        <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+        <img class="footer__fin-pas" src="/public/icones/pas-rouge.svg" alt="pas rouge">
+     </div>
+</footer>
+    
+</body>
+</html>

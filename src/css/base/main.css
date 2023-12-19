@@ -9,4 +9,54 @@ html {
 body {
   margin: 0;
   background-color: var(--couleur-de-fond);
+  color: var(--blanc);
+  font-family: 'noto sans', sans-serif;
+  font-size: var(--body-3);
+  line-height: 160%;
 }
+h1 {
+  font-family: 'harry p';
+  font-size: var(--heading-1);
+  color: var(--couleur-texte);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  line-height: 120%;
+}
+h4 {
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--heading-4);
+    color: var(--couleur-texte);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-bottom: 1px;
+    margin-left: 0;
+}
+figure {
+    margin: 0 -20px;
+    margin-top: 60px;
+  }
+.figure__legende {
+    margin-left: 0rem;
+    font-size: var(--body-4);
+}
+main {
+    margin-top: 150px;
+}
+input {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--noir);
+  }
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 0 20px;
+  }
+  .list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }

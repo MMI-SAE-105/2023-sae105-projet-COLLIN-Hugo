@@ -11,13 +11,15 @@
 --bleu: rgba(11, 95, 167, 1);
 
 /* Text-size styles */
---heading-1: 48px;
---heading-2: 36px;
---heading-3: 24px;
---heading-4: 16px;
---body-1: 30px;
---body-2: 22px;
---body-3: 12px;
---body-4: 9px;
---text-uppercase: 12px;
+/* base size: heading-1 (48px) */
+--heading-1: 3rem;
+--heading-2: 2.25rem;
+--heading-3: 1.5rem;
+--heading-4: 1rem;
+--heading-5: 1rem;
+--body-1: 1.88rem;
+--body-2: 1.12rem;
+--body-3: 0.75rem;
+--body-4: 0.56rem;
+--text-uppercase: 0.25rem;
 }

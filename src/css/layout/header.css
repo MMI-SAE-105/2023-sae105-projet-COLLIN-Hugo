@@ -1,21 +1,120 @@
-.header {
-    background-color: var(--gray-white);
+.menu{
+  background-color: var(--couleur-de-fond);
+  width: 100%;
+}
+.menu-btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menubox{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: var(--couleur-de-fond);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    align-items: center;
+    padding: 12px 24px;
+    color: var(--blanc);
+    font-family: 'noto sans', light;
+    font-size: var(--body-2);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu-item:hover {
+    background-color: var(--couleur-de-fond);
+  }
+  #menu-toggle{
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .menu-btn > span{
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::before{
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .menubox{
+    visibility: visible;
+    left: 0;
+  }
+  .header__menu menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 390vw;
+    height: 91vh;
+    background-color: var(--blanc);
+    display: grid;
+    place-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .header {
+    background-color : var(--couleur-des-articles);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
-    padding: var(--space2x) var(--space3x);
+    z-index: 3;
     display: flex;
     justify-content: space-between;
+    height: 80px;
   }
-  
   .header__end {
     display: flex;
-    gap: var(--space2x);
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 70px;
+    display: grid;
+    z-index: 4;
+    margin-right: 0.8rem;
+    margin-top: 10px;
   }
-  
   .header__logo {
-    display: block;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 60px;
+    display: grid;
+    z-index: 4;
+    margin-left: 1rem;
+    margin-top: 15px;
   }
