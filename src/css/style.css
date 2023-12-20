@@ -25,6 +25,7 @@
 @import "components/presentation-article.css";
 @import "components/icone.css";
 @import "components/vignette.css";
+@import "components/cards.css";
 
 @font-face {
     font-family: 'harry_p';

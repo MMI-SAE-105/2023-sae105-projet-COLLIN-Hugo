@@ -7,6 +7,7 @@
     <link rel="icon" href="/public/icones/logo-blanc.svg">
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body x-data="{ atTop: true}">
 <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
@@ -101,26 +102,50 @@
         Ce premier tome a marqué le monde de la littérature et du cinéma. Encore aujourd’hui, Harry Potter continue à émerveiller 
         les lecteurs du monde entier.
     </p>
-<div class="container__hedwig">
-    <img class="container__hedwig-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+<div class="container__separation">
+    <img class="container__separation-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
     <h2>En savoir plus</h2>
 </div>
 <div class="article">
     <a href="/fr/article6.html">
     <div class="content">
-    <p class="byline">Par COLLIN Hugo</p>
-    <img class="author" src="/public/img/img-vignette-jkr.webp" alt="J.K. Rowling">
-    <h3 class="titre">J.K. Rowling : Au-delà de Poudlard, une écrivaine polyvalente</h3>
-    <p class="description">J.K. Rowling, l'auteure de Harry Potter, a créé un monde magique, vendu 500M+ livres, et suscité des débats avec ses opinions sur le genre.</p>
+    <p class="article__intro">Par COLLIN Hugo</p>
+    <img src="/public/img/img-vignette-jkr.webp" alt="J.K. Rowling">
+    <h3 class="article__titre">J.K. Rowling : Au-delà de Poudlard, une écrivaine polyvalente</h3>
+    <p class="article__description">J.K. Rowling, l'auteure de Harry Potter, a créé un monde magique, vendu 500M+ livres, et suscité des débats avec ses opinions sur le genre.</p>
     <img class="article__plus-info" src="/public/icones/plus-info.svg"></a>
     </div>
-    </a>
 </div>
-<div class="container__hedwig">
-    <img class="container__hedwig-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+<div class="container__separation">
+    <img class="container__separation-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
     <h2>Autres livres</h2>
 </div>
+
+<div class="card__flip--html">
+    <div class="card__flip--body"> 
+<div class="container__card">
+    <div class="card" >
+        <div class="front"><img src="/public/img/img-cards-1.webp"></div>
+        <div class="back">Yo, what up?</div>
+    </div>
 </div>
+</div>
+</div>
+<div class="card__flip--html">
+    <div class="card__flip--body"> 
+<div class="container__card">
+    <div class="card" >
+        <div class="front"><img src="/public/img/img-cards-1.webp"></div>
+        <div class="back">Yo, what up?</div>
+    </div>
+</div>
+</div>
+</div>
+<script id="rendered-js">
+    $('.container').on('click', function () {
+        $('.card').toggleClass('flipped');
+    });
+</script>
 </main>
 <footer class="footer">
 <div class="footer__logolink">
@@ -164,7 +189,7 @@
     <div class="footer__fin">
     <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
     <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
-</div>
+    </div>
 </footer>
 </body>
 </html>

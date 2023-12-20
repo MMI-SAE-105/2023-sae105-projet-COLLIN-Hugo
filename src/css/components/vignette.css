@@ -29,5 +29,5 @@
 .vignette__plus-info {
     display: flex;
     justify-content: space-between;
-    margin-left: 260px;
+    margin-left: auto;
 }
