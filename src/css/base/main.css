@@ -12,7 +12,7 @@ body {
   color: var(--blanc);
   font-family: 'noto sans', sans-serif;
   font-size: var(--body-3);
-  line-height: 160%;
+  line-height: 180%;
 }
 h1 {
   font-family: 'harry_p';

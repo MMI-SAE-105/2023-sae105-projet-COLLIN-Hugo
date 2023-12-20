@@ -1,0 +1,25 @@
+.hero__header {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: -150px;
+  }
+.hero__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: 0 -20px;
+    padding-left: 20px;
+    width: 100%;
+  }
+.hero__icone {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: -10px;
+    margin-top: 350px;
+}
+.hero__titre {
+    padding-bottom: 350px;
+}
