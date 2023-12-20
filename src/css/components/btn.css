@@ -1,0 +1,15 @@
+.parent-container {
+    display: flex;
+    justify-content: center;
+}
+.bouton {
+    display: inline-block;
+    padding: 10px 40px;;
+    color: var(--blanc);
+    border: 2px solid var(--blanc);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    font-family: 'noto sans', sans-serif;
+}
