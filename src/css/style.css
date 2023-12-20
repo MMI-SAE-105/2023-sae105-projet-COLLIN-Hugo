@@ -27,7 +27,7 @@
 @import "components/vignette.css";
 
 @font-face {
-    font-family: 'harry_pregular';
+    font-family: 'harry_p';
     src: url('/src/fonts/harryp.woff2') format('woff2'),
         url('/src/fonts/harryp.woff') format('woff');
     font-weight: normal;

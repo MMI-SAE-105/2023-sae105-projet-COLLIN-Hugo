@@ -15,7 +15,7 @@ body {
   line-height: 160%;
 }
 h1 {
-  font-family: 'harry_pregular';
+  font-family: 'harry_p';
   font-size: var(--heading-1);
   color: var(--couleur-texte);
   margin-top: 30px;
@@ -23,14 +23,13 @@ h1 {
   line-height: 120%;
 }
 h2 {
-    font-family: 'harry_pregular';
+    font-family: 'harry_p';
     font-size: var(--heading-2);
     color: var(--blanc);
     margin-top: 1px;
     margin-bottom: -50px;
     line-height: 120%;
     text-align: center;
-
 }
 h4 {
     font-family: 'noto sans', sans-serif;
