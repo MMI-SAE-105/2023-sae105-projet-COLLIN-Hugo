@@ -1,0 +1,19 @@
+.intro__texte {
+    font-family: 'harry_p';
+    font-size: var(--heading-2);
+    line-height: 60px;
+    margin-top: 1px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+}
+.intro__pattern {
+    position: absolute;
+    top: 610px;
+    right: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.apropos__container {
+    
+}

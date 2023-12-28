@@ -13,6 +13,7 @@
     margin: 0 -20px;
     padding-left: 20px;
     width: 100%;
+    margin-top: -70px;
   }
 .hero__icone {
     margin-left: 2rem;
@@ -21,5 +22,12 @@
     margin-top: 350px;
 }
 .hero__titre {
-    padding-bottom: 350px;
+    font-family: 'harry_p';
+    font-size: var(--heading-1);
+    padding-bottom: 450px;
+    margin-left: 2rem;
+    letter-spacing: 4px;
+}
+.hero__titre-apropos {
+  padding-bottom: 350px;
 }
