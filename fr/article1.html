@@ -120,33 +120,108 @@
     <img class="container__separation-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
     <h2>Autres livres</h2>
 </div>
-
-<div class="caroussel" id="caroussel-1">
-    <div class="flip-container" id="flip-container-1"> 
-        <div class="card" id="card-1">
-            <div class="front"><img src="/public/img/img-cards-4.webp"></div>
-            <div class="back">Yo, what up?</div>
+<div class="cards-container">
+    <div class="caroussel-1" id="caroussel-1">
+        <div class="flip-container" id="flip-container-1"> 
+            <div class="card" id="card-1">
+                <div class="front"><img src="/public/img/img-cards-4.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et la chambre des secrets</h5>
+                    <p class="back__texte">Harry Potter explore les mystères de Poudlard en deuxième année.</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="caroussel-1" id="caroussel-2">
-    <div class="flip-container" id="flip-container-2"> 
-        <div class="card" id="card-2">
-            <div class="front"><img src="/public/img/img-cards-5.webp"></div>
-            <div class="back">Yo, what up?</div>
+    <div class="caroussel-3" id="caroussel-3">
+        <div class="flip-container" id="flip-container-3"> 
+            <div class="card" id="card-3">
+                <div class="front"><img src="/public/img/img-cards-2.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et la coupe de feu</h5>
+                    <p class="back__texte">Harry Potter participe à un dangereux tournoi de sorcier tout en luttant contre le retour de Voldemort.</p>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="caroussel-5" id="caroussel-5">
+        <div class="flip-container" id="flip-container-5"> 
+            <div class="card" id="card-5">
+                <div class="front"><img src="/public/img/img-cards-7.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et l’ordre du Phenix</h5>
+                    <p class="back__texte">Harry forme une alliance secrète pour contrer Voldemort et fait face à des révélations choquantes sur son passé.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-7" id="caroussel-7">
+        <div class="flip-container" id="flip-container-7"> 
+            <div class="card" id="card-7">
+                <div class="front"><img src="/public/img/img-cards-6.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et les reliques de la mort, Partie 2</h5>
+                    <p class="back__texte">Harry, Ron et Hermione traquent les horcruxes de Voldemort tout en combattant le mal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-2" id="caroussel-2">
+        <div class="flip-container" id="flip-container-2"> 
+            <div class="card" id="card-2">
+                <div class="front"><img src="/public/img/img-cards-5.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et le prisonnier d'Azkaban</h5>
+                    <p class="back__texte">Harry découvre des secrets sur son passé tout en affrontant un criminel évadé, Sirius Black.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-4" id="caroussel-4">
+        <div class="flip-container" id="flip-container-4"> 
+            <div class="card" id="card-4">
+                <div class="front"><img src="/public/img/img-cards-8.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et le prince de sang mele</h5>
+                    <p class="back__texte">Harry découvre les secrets de Voldemort et perd des êtres chers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-6" id="caroussel-6">
+        <div class="flip-container" id="flip-container-6"> 
+            <div class="card" id="card-6">
+                <div class="front"><img src="/public/img/img-cards-3.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et les reliques de la mort, Partie 1</h5>
+                    <p class="back__texte">Harry, Ron et Hermione traquent les horcruxes de Voldemort tout en combattant le mal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#flip-container-1').on('click', function () {
+            $('#card-1').toggleClass('flipped');
+        });
+        $('#flip-container-2').on('click', function () {
+            $('#card-2').toggleClass('flipped');
+        });
+        $('#flip-container-3').on('click', function () {
+            $('#card-3').toggleClass('flipped');
+        });
+        $('#flip-container-4').on('click', function () {
+            $('#card-4').toggleClass('flipped');
+        });
+        $('#flip-container-5').on('click', function () {
+            $('#card-5').toggleClass('flipped');
+        });
+        $('#flip-container-6').on('click', function () {
+            $('#card-6').toggleClass('flipped');
+        });
+        $('#flip-container-7').on('click', function () {
+            $('#card-7').toggleClass('flipped');
+        });
+    </script>
 </div>
-<script>
-    $('#flip-container-1').on('click', function () {
-        $('#card-1').toggleClass('flipped');
-    });
-
-    $('#flip-container-2').on('click', function () {
-        $('#card-2').toggleClass('flipped');
-    });
-</script>
 
 
 
