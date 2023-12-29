@@ -3,7 +3,7 @@
     column-gap: 20px;
 }
 #caroussel-1,
-#caroussel-2,
+#caroussel-0,
 #caroussel-3,
 #caroussel-4,
 #caroussel-5,
@@ -16,7 +16,7 @@
     flex: 0 0 calc(33.33% - 20px); /* 33.33% pour trois colonnes, 20px pour l'espace entre les colonnes */
 }
 #flip-container-1,
-#flip-container-2,
+#flip-container-0,
 #flip-container-3,
 #flip-container-4,
 #flip-container-5,
@@ -34,8 +34,8 @@
 }
 #card-1 .front,
 #card-1 .back,
-#card-2 .front,
-#card-2 .back,
+#card-0 .front,
+#card-0 .back,
 #card-3 .front,
 #card-3 .back,
 #card-4 .front,
@@ -62,7 +62,7 @@
     border-radius: 10px;
 }
 #card-1 .front,
-#card-2 .front,
+#card-0 .front,
 #card-3 .front,
 #card-4 .front,
 #card-5 .front,
@@ -80,7 +80,7 @@
     overflow: hidden;
 }
 #card-1 .front img,
-#card-2 .front img,
+#card-0 .front img,
 #card-3 .front img,
 #card-4 .front img,
 #card-5 .front img,
@@ -95,7 +95,7 @@
     margin-bottom: 0;
 }
 #card-1 .back,
-#card-2 .back,
+#card-0 .back,
 #card-3 .back,
 #card-4 .back,
 #card-5 .back,
@@ -111,7 +111,7 @@
     flex-direction: column;
 }
 #card-1 .back__titre,
-#card-2 .back__titre,
+#card-0 .back__titre,
 #card-3 .back__titre,
 #card-4 .back__titre,
 #card-5 .back__titre,
@@ -129,7 +129,7 @@
     margin-top: 20px;
 }
 #card-1 .back__texte,
-#card-2 .back__texte,
+#card-0 .back__texte,
 #card-3 .back__texte,
 #card-4 .back__texte,
 #card-5 .back__texte,
@@ -156,13 +156,13 @@
 #card-1.flipped .front {
     transform: rotateY(180deg);
 }
-#card-2 .back {
+#card-0 .back {
     transform: rotateY(-180deg);
 }
-#card-2.flipped .back {
+#card-0.flipped .back {
     transform: rotateY(0deg);
 }
-#card-2.flipped .front {
+#card-0.flipped .front {
     transform: rotateY(180deg);
 }
 #card-3 .back {
