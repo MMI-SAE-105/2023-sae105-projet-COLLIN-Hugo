@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body x-data="{ atTop: true}">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
+<div class="header__start">
+    <a href="/fr/index.html">
+    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+    </a>
+</div>
+<div class="header__end">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+    @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+<nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+    </ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="container">
+    <h1>L’adaptation cinématographique d’un best-seller</h1>
+    <p>Découvrez la magie de l'adaptation cinématographique du premier volume de Harry Potter. Malgré l’enjeu, 
+        le film est très fidèle à l'univers magique de J.K. Rowling.
+    </p>
+<div class="figure__img">
+    <img src="/public/img/img-article-2.webp" alt="image personnage principaux">
+    <figcaption class="figure__legende">Image tirée du site Canal VOD
+    </figcaption>
+</div>
+    <h4>Triomphe</h4>
+    <p>Le livre est un énorme succès et l’adaptation cinématographique est sorti peu de temps après. 
+        Cette adaptation sera un moment très attendu par les fans. En effet, les fans sont impatients de découvrir 
+        l’histoire du livre sur grand écran. Cette adaptation cinématographique de Harry Potter, 
+        « Harry Potter à l’école des sorciers » est un exemple le plus emblématique.<br>
+        <br>
+        Le premier film de Harry Potter est réalisé par Chris Columbus. Les attentes des lecteurs et des fans 
+        pour le premier film étaient très élevées. Le travail du réalisateur n’était pas facile, 
+        car il devait donner vie à Poudlard, aux personnages et à l'histoire elle-même. Tout cela est adapté au grand écran. 
+        Cependant, dans le tome 1, j'ai pu retranscrire toute l'histoire du livre en détail.
+    </p>
+    <h4>Merveille</h4>
+    <p>Malgré les défis, « Harry Potter à l’école des sorciers » est un succès total. Chris Colombus a su 
+        conquérir le cœur des fans avec ce premier film et a donné la voie à une franchise cinématographie retentissante. 
+        Le réalisateur et son équipe ont permis aux spectateurs de vivre l’aventure de Harry Potter en utilisant des décors, 
+        des costumes et des effets spéciaux majestueux. Le public peut vivre cette histoire de magie avec des salles 
+        de classe remplies de magie, des créatures comme Nick Quasi-Sans-Tête* ou encore des escaliers mouvants.
+    </p>
+    <h4>Pionner</h4>
+    <p>Cependant, l'adaptation cinématographique du premier tome de Harry Potter a été le début d’une grande série de film à succès. 
+        Cette série continue encore aujourd’hui à captiver le public du monde entier de génération en génération. 
+        Ainsi, ce premier livre montre comment l’histoire littéraire de J.K. Rowling avec une solide communauté peut être 
+        traduit en un film époustouflant. "Harry Potter à l'école des sorciers" a ouvert la voie à une série de films inoubliables, 
+        marquant le début d'une belle histoire magique qui perdure encore aujourd'hui.
+    </p>
+<div class="container__separation">
+    <img class="container__separation-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+    <h2>Autres films</h2><br>
+</div>
+<div class="cards-container">
+    <div class="caroussel" id="caroussel-1">
+        <div class="flip-container" id="flip-container-1"> 
+            <div class="card" id="card-1">
+                <div class="front"><img src="/public/img/img-cards-4.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et la chambre des secrets</h5>
+                    <p class="back__texte">Harry Potter explore les mystères de Poudlard en deuxième année.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-3" id="caroussel-3">
+        <div class="flip-container" id="flip-container-3"> 
+            <div class="card" id="card-3">
+                <div class="front"><img src="/public/img/img-cards-2.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et la coupe de feu</h5>
+                    <p class="back__texte">Harry Potter affronte Voldemort lors d'un tournoi sorcier périlleux.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-5" id="caroussel-5">
+        <div class="flip-container" id="flip-container-5"> 
+            <div class="card" id="card-5">
+                <div class="front"><img src="/public/img/img-cards-7.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et l’ordre du Phenix</h5>
+                    <p class="back__texte">Harry forme une alliance secrète contre Voldemort, révélant des chocs du passé.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-7" id="caroussel-7">
+        <div class="flip-container" id="flip-container-7"> 
+            <div class="card" id="card-7">
+                <div class="front"><img src="/public/img/img-cards-6.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et les reliques de la mort, Partie 2</h5>
+                    <p class="back__texte">Harry, Ron et Hermione traquent les horcruxes de Voldemort tout en combattant le mal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-9" id="caroussel-9">
+        <div class="flip-container" id="flip-container-9"> 
+            <div class="card" id="card-9">
+                <div class="front"><img src="/public/img/img-cards-crimes.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Les Animaux fantastiques : Les Crimes de Grindelwald</h5>
+                    <p class="back__texte">Grindelwald prépare la guerre magique, Newt s'oppose à lui.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-2" id="caroussel-2">
+        <div class="flip-container" id="flip-container-2"> 
+            <div class="card" id="card-2">
+                <div class="front"><img src="/public/img/img-cards-5.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et le prisonnier d'Azkaban</h5>
+                    <p class="back__texte">Harry découvre des secrets en affrontant le criminel Sirius Black.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-4" id="caroussel-4">
+        <div class="flip-container" id="flip-container-4"> 
+            <div class="card" id="card-4">
+                <div class="front"><img src="/public/img/img-cards-8.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et le prince de sang mele</h5>
+                    <p class="back__texte">Harry découvre les secrets de Voldemort et perd des êtres chers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-6" id="caroussel-6">
+        <div class="flip-container" id="flip-container-6"> 
+            <div class="card" id="card-6">
+                <div class="front"><img src="/public/img/img-cards-3.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Harry Potter et les reliques de la mort, Partie 1</h5>
+                    <p class="back__texte">Harry, Ron et Hermione traquent les horcruxes de Voldemort tout en combattant le mal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-8" id="caroussel-8">
+        <div class="flip-container" id="flip-container-8"> 
+            <div class="card" id="card-8">
+                <div class="front"><img src="/public/img/img-cards-animaux.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Les animaux fantastiques 1</h5>
+                    <p class="back__texte">Norbert Dragonneau chasse et affronte des menaces magiques à New York.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="caroussel-10" id="caroussel-10">
+        <div class="flip-container" id="flip-container-10"> 
+            <div class="card" id="card-10">
+                <div class="front"><img src="/public/img/img-cards-secret.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Les Animaux fantastiques : Les Secrets de Dumbledore</h5>
+                    <p class="back__texte">Dragonseau et Dumbledore unis contre Grindelwald.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#flip-container-1').on('click', function () {
+            $('#card-1').toggleClass('flipped');
+        });
+        $('#flip-container-2').on('click', function () {
+            $('#card-2').toggleClass('flipped');
+        });
+        $('#flip-container-3').on('click', function () {
+            $('#card-3').toggleClass('flipped');
+        });
+        $('#flip-container-4').on('click', function () {
+            $('#card-4').toggleClass('flipped');
+        });
+        $('#flip-container-5').on('click', function () {
+            $('#card-5').toggleClass('flipped');
+        });
+        $('#flip-container-6').on('click', function () {
+            $('#card-6').toggleClass('flipped');
+        });
+        $('#flip-container-7').on('click', function () {
+            $('#card-7').toggleClass('flipped');
+        });
+        $('#flip-container-8').on('click', function () {
+            $('#card-8').toggleClass('flipped');
+        });
+        $('#flip-container-9').on('click', function () {
+            $('#card-9').toggleClass('flipped');
+        });
+        $('#flip-container-10').on('click', function () {
+            $('#card-10').toggleClass('flipped');
+        });
+    </script>
+</div>
+</main>
+<footer class="footer">
+<div class="footer__logolink">
+    <a href="/fr/index.html">
+        <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+    </a>
+    <h4 class="footer__debut-texte">L'école des sortilèges</h4>
+</div>
+<div class="footer__mentionslegales">
+    <h4 class="footer__titre">MENTIONS LEGALES</h4>
+    <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+    </p>
+</div>
+<div class="footer__contact">
+    <h4 class="footer__titre">CONTACT</h4>
+    <p class="footer__texte">
+        hugo.collin@edu.univ-fcomte.com<br>
+        +33 6 45 12 54 80<br>
+        Département MMI Montébiard
+    </p>
+</div>
+<div class="footer__social">
+    <h4 class="footer__titre">SUIVEZ-NOUS</h4>
+    <ul class="footer__liste list-unstyled">
+        <li><a href="https://www.facebook.com/" aria-label="facebook">
+            <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+        </a></li>
+        <li><a href="https://www.instagram.com/" aria-label="instagram">
+            <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+        </a></li>
+        <li><a href="https://twitter.com/" aria-label="twitter">
+            <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+        </a></li>
+        <li><a href="https://youtube.com" aria-label="youtube">
+            <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+        </a></li>
+    </ul>
+    <a class="footer__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+    </div>
+    <div class="footer__fin">
+    <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
+    <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+    </div>
+</footer>
+</body>
+</html>

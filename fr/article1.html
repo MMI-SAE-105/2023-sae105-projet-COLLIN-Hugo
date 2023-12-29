@@ -120,8 +120,10 @@
     <img class="container__separation-icone" src="/public/icones/logo-hedwig.svg" alt="hedwig">
     <h2>Autres livres</h2>
 </div>
+
+
 <div class="cards-container">
-    <div class="caroussel-1" id="caroussel-1">
+    <div class="caroussel" id="caroussel-1">
         <div class="flip-container" id="flip-container-1"> 
             <div class="card" id="card-1">
                 <div class="front"><img src="/public/img/img-cards-4.webp"></div>
@@ -138,7 +140,7 @@
                 <div class="front"><img src="/public/img/img-cards-2.webp"></div>
                 <div class="back">
                     <h5 class="back__titre">Harry Potter et la coupe de feu</h5>
-                    <p class="back__texte">Harry Potter participe à un dangereux tournoi de sorcier tout en luttant contre le retour de Voldemort.</p>
+                    <p class="back__texte">Harry Potter affronte Voldemort lors d'un tournoi sorcier périlleux.</p>
                 </div>
             </div>
         </div>
@@ -149,7 +151,7 @@
                 <div class="front"><img src="/public/img/img-cards-7.webp"></div>
                 <div class="back">
                     <h5 class="back__titre">Harry Potter et l’ordre du Phenix</h5>
-                    <p class="back__texte">Harry forme une alliance secrète pour contrer Voldemort et fait face à des révélations choquantes sur son passé.</p>
+                    <p class="back__texte">Harry forme une alliance secrète contre Voldemort, révélant des chocs du passé.</p>
                 </div>
             </div>
         </div>
@@ -167,11 +169,11 @@
     </div>
     <div class="caroussel-2" id="caroussel-2">
         <div class="flip-container" id="flip-container-2"> 
-            <div class="card-2" id="card-2">
+            <div class="card" id="card-2">
                 <div class="front"><img src="/public/img/img-cards-5.webp"></div>
                 <div class="back">
                     <h5 class="back__titre">Harry Potter et le prisonnier d'Azkaban</h5>
-                    <p class="back__texte">Harry découvre des secrets sur son passé tout en affrontant un criminel évadé, Sirius Black.</p>
+                    <p class="back__texte">Harry découvre des secrets en affrontant le criminel Sirius Black.</p>
                 </div>
             </div>
         </div>
@@ -198,6 +200,17 @@
             </div>
         </div>
     </div>
+    <div class="caroussel-8" id="caroussel-8">
+        <div class="flip-container" id="flip-container-8"> 
+            <div class="card" id="card-8">
+                <div class="front"><img src="/public/img/img-cards-animaux.webp"></div>
+                <div class="back">
+                    <h5 class="back__titre">Les animaux fantastiques 1</h5>
+                    <p class="back__texte">Norbert Dragonneau chasse et affronte des menaces magiques à New York.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         $('#flip-container-1').on('click', function () {
             $('#card-1').toggleClass('flipped');
@@ -219,6 +232,9 @@
         });
         $('#flip-container-7').on('click', function () {
             $('#card-7').toggleClass('flipped');
+        });
+        $('#flip-container-8').on('click', function () {
+            $('#card-8').toggleClass('flipped');
         });
     </script>
 </div>
