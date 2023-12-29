@@ -121,19 +121,34 @@
     <h2>Autres livres</h2>
 </div>
 
-<div class="caroussel">
-    <div class="flip-container"> 
-    <div class="card" >
-        <div class="front"><img src="/public/img/img-cards-4.webp"></div>
-        <div class="back">Yo, what up?</div>
-    </div>
+<div class="caroussel" id="caroussel-1">
+    <div class="flip-container" id="flip-container-1"> 
+        <div class="card" id="card-1">
+            <div class="front"><img src="/public/img/img-cards-4.webp"></div>
+            <div class="back">Yo, what up?</div>
+        </div>
     </div>
 </div>
-<script id="rendered-js">
-    $('.container').on('click', function () {
-        $('.card').toggleClass('flipped');
+
+<div class="caroussel-1" id="caroussel-2">
+    <div class="flip-container" id="flip-container-2"> 
+        <div class="card" id="card-2">
+            <div class="front"><img src="/public/img/img-cards-5.webp"></div>
+            <div class="back">Yo, what up?</div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#flip-container-1').on('click', function () {
+        $('#card-1').toggleClass('flipped');
+    });
+
+    $('#flip-container-2').on('click', function () {
+        $('#card-2').toggleClass('flipped');
     });
 </script>
+
+
 
 </main>
 <footer class="footer">

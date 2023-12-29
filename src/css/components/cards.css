@@ -1,9 +1,5 @@
-.caroussel {
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    text-align: center;
-}
-.flip-container {
+#flip-container-1,
+#flip-container-2 {
     margin: 50px 64px 50px 0;
     display: inline-block;
     width: 300px;
@@ -11,21 +7,23 @@
     transition: all 0.2s;
     perspective: 900px;
 }
-.front,
-.back {
+
+#card-1 .front,
+#card-1 .back,
+#card-2 .front,
+#card-2 .back {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 512px;
+    width: 160px;
+    height: 200px;
     text-align: left;
     backface-visibility: hidden;
     transform-style: preserve3d;
     transition: all 0.4s;
     border-radius: 10px;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .08), 0 2px 2px 0 rgba(0, 0, 0, .04);
 }
-.front {
+
+#card-1 .front,
+#card-2 .front {
     background: var(--couleur-des-articles);
     display: flex;
     justify-content: center;
@@ -34,47 +32,67 @@
     text-align: center;
     overflow: hidden;
 }
-.front h4 {
+
+#card-1 .front h4,
+#card-2 .front h4 {
     margin: 32px 0;
 }
-.front img {
+
+#card-1 .front img,
+#card-2 .front img {
     width: 160px;
-    height: 200px
+    height: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.back {
-    background: rgb(245, 245, 245);
+
+#card-1 .back,
+#card-2 .back {
+    background: var(--couleur-des-articles);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.back ul {
+#card-1 .back ul,
+#card-2 .back ul {
     list-style: none;
 }
 
-.back li {
+#card-1 .back li,
+#card-2 .back li {
     margin: 24px 0;
     font-size: 18px;
 }
 
-.back li:before {
+#card-1 .back li:before,
+#card-2 .back li:before {
     content: "• ";
     font-size: 24px;
-    color: rgb(0, 120, 190);/
+    color: rgb(0, 120, 190);
 }
-.back {
+
+#card-1 .back {
     transform: rotateY(-180deg);
 }
-.flipped .back {
+
+#card-1.flipped .back {
     transform: rotateY(0deg);
 }
 
-.flipped .front {
+#card-1.flipped .front {
     transform: rotateY(180deg);
 }
-.white-space {
-    width: 40px;
-    height: 1px;
-    background-color: var(--couleur-des-articles);
+
+#card-2 .back {
+    transform: rotateY(-180deg);
+}
+
+#card-2.flipped .back {
+    transform: rotateY(0deg);
+}
+
+#card-2.flipped .front {
+    transform: rotateY(180deg);
 }
