@@ -28,6 +28,7 @@
 @import "components/cards.css";
 @import "components/btn.css";
 @import "components/section.css";
+@import "components/caroussel.css";
 
 @font-face {
     font-family: 'harry_p';

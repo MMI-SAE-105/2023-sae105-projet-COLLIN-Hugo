@@ -2,16 +2,16 @@
     column-count: 2;
     column-gap: 20px;
 }
-#caroussel-1,
-#caroussel-2,
-#caroussel-3,
-#caroussel-4,
-#caroussel-5,
-#caroussel-6,
-#caroussel-7,
-#caroussel-8,
-#caroussel-9,
-#caroussel-10 {
+#galerie-1,
+#galerie-2,
+#galerie-3,
+#galerie-4,
+#galerie-5,
+#galerie-6,
+#galerie-7,
+#galerie-8,
+#galerie-9,
+#galerie-10 {
     margin-bottom: -400px;
     flex: 0 0 calc(33.33% - 20px);
 }
@@ -126,7 +126,7 @@
     font-size: var(--heading-5);
     font-family: 'harry_p';
     color: var(--couleur-texte);
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #card-1 .back__texte,
 #card-2 .back__texte,
@@ -145,7 +145,7 @@
     color: var(--blanc);
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: -7px;
+    margin-top: 30px;
 }
 #card-1 .back {
     transform: rotateY(-180deg);
