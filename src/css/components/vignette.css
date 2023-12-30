@@ -1,7 +1,7 @@
 .container__vignette {
     background-color: var(--couleur-des-articles);
     font-family: 'noto sans', sans-serif;
-    width: 85%;
+    width: 91%;
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -9,12 +9,12 @@
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 90px;
 }
 .vignette__titre {
     font-size: var(--heading-3);
-    color: var(--blanc);
+    color: var(--couleur-texte);
     margin-left: 1rem;
     margin-top: 22px;
 }
