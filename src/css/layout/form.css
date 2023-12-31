@@ -1,0 +1,106 @@
+
+* { box-sizing: border-box }
+
+form {
+    max-width: 340px;
+    margin: 50px auto;
+    font-family: 'noto sans', sans-serif;
+}
+.form__title {
+    font-family: 'harry_p';
+    font-size: var(--heading-5);
+    color: var(--blanc);
+    margin: 0;
+}
+.form__title > span {
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--body-2);
+    color: var(--couleur-texte);
+}
+input,
+textarea {
+    font-size: 18px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.2), 0px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    color: white;
+}
+
+input[type="submit"] {
+    background: #166387;
+    border: 1px solid #044C6E;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2), 0px 4px 0px rgba(6,82,117,1);
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.3);
+    border: 1px solid white;
+    background: rgba(0,0,0,0.1);
+}
+
+label {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+}
+select {
+    height: auto;
+    margin: 0;
+    background: none;
+    width: 100%;
+    font-size: var(--body-2);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.2), 0px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    color: var(--blanc);
+}
+  .check-box-group {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .custom-checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .custom-checkbox .label {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
+  
+  .custom-checkbox .checkmark {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #222;
+    display: inline-block;
+    border-radius: 3px;
+    background: #222 url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+    transition: background-size 0.2s ease;
+  }
+  .custom-checkbox input:checked + .checkmark {
+    background-size: 60%;
+    transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+  }
+  
+  .custom-checkbox input {
+    display: none;
+  }
