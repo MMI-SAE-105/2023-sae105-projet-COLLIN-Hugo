@@ -69,29 +69,28 @@
         <option value="option2">Non binaire</option>
         <option value="option2">Ne pas répondre</option>
     </select>
-    <label class="form__title" for="name">Nom et prénom<span>*</span></label>
+    <label class="form__title" for="name">Nom et prenom<span>*</span></label>
     <input id="name" type="text" name="name">
     <label class="form__title" for="email">Email<span>*</span></label>
     <input id="email" type="text" name="email">
-    <label class="form__title" for="phone">Numéro de téléphone</label>
+    <label class="form__title" for="phone">Numero de telephone</label>
     <input id="phone" type="text" name="phone">
     <label class="form__title" for="comments">Votre message<span>*</span></label>
     <textarea id="comments" name="textarea" rows="10"></textarea>
-
+    <p class="form__test"><span>*</span>Ces champs sont obligatoires</p>
     <div class="check-box-group">
         <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
           <input type="checkbox" checked>
           <span class="checkmark"></span>
-          <span class="label">Checkbox Label</span>
+          <span class="form__check">J'accepte les conditions générales d'utilisation</span>
         </label>
       
         <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
           <input type="checkbox">
           <span class="checkmark"></span>
-          <span class="label">Another Label</span>
+          <span class="form__check">J'accepte la politique de confidentialité.</span>
         </label>
       </div>
-
     <input type="submit">
 </form>
 </main>
