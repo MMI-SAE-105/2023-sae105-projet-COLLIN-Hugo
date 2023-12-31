@@ -31,7 +31,13 @@
 .hero__titre-apropos {
   padding-bottom: 350px;
 }
-.hero__img-deroulant {
-
-
+.hero__form-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: 0;
+    margin-top: 20%;
 }
