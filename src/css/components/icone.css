@@ -1,7 +1,13 @@
-.container__separation-icone {
+.container__separation-hedwig {
     margin-left: auto;
     margin-right: auto;
     display: block;
     padding-top: 50px;
 }
-
+.container__separation-baguette {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -80px;
+    margin-bottom: -80px;
+}

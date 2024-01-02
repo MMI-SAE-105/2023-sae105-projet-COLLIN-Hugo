@@ -8,6 +8,7 @@ html {
 }
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--couleur-de-fond);
   color: var(--blanc);
   font-family: 'noto sans', sans-serif;

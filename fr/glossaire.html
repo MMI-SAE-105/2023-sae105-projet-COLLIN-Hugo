@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'école des sortilèges</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body x-data="{ atTop: true}">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
+<div class="header__start">
+    <a href="/fr/index.html">
+    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+    </a>
+</div>
+<div class="header__end">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+    @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+<nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+        </li>
+        <li class="menu__item">
+        <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+    </ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="container">
+    <h1>Glossaire</h1>
+    <h3><strong>Saga</strong></h3>
+    <dfn>Une saga est une série d'histoires, d’événements ou d’œuvres liés par un scénario commun, un thème central 
+        ou des personnages récurrents. Les sagas sont souvent narratives et peuvent s'étendre sur de longues périodes, 
+        s'étendant sur plusieurs livres, films, épisodes, etc.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Poudlard</strong></h3>
+    <dfn>Poudlard est une école de sorcellerie fictive créée par l'auteure J.K. Rowling dans la série de livres "Harry Potter". 
+        Elle est située en Grande-Bretagne, cachée des moldus (personnes sans pouvoirs magiques), 
+        et est considérée comme l'une des écoles de magie les plus prestigieuses au monde.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Albus Dumbledore</strong></h3>
+    <dfn>Albus Dumbledore est l'un des personnages centraux de la série et occupe le poste de directeur de l’école Poudlard, 
+        l’école de sorcellerie. Il est réputé pour sa sagesse, sa bonté et ses puissantes compétences magiques.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>McGonagall</strong></h3>
+    <dfn>Elle est un membre du personnel de l’école de sorcellerie Poudlard et occupe plusieurs postes importants tout au long de la série.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Poudlard Express</strong></h3>
+    <dfn>Il s’agit d’un train joue un rôle crucial dans l'histoire, car il est utilisé par les jeunes sorciers pour se rendre à Poudlard, 
+        l’école de sorcellerie, au début de chaque année scolaire.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Les Dursley</strong></h3>
+    <dfn>Les Dursley sont une famille considérée comme antipathiques, bornés et très anti-magie. Après la mort de ses parents, 
+        ils élèvent Harry Potter, mais le traitent avec mépris et négligence.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Rubeus Hagrid</strong></h3>
+    <dfn>Rubeus Hagrid est le gardien des clés et des créatures magiques à l’école de sorcellerie Poudlard. 
+        Il devient très vite l’ami de Harry Potter.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Nick-Quasi-Sans-Tete</strong></h3>
+    <dfn>Il est un fantôme résidant à Poudlard, l’école de sorcellerie, et est le fantôme de la maison Gryffondor. 
+        Son nom provient du fait qu'il a presque été décapité, d'où le surnom "Quasi-Sans-Tête."
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Privet Drive</strong></h3>
+    <dfn>Privet Drive est une adresse fictive dans la série Harry Potter de J.K. Rowling. 
+        C'est le lieu où réside la famille Dursley, la famille de la tante et de l'oncle de Harry Potter, 
+        dans les premiers livres de la série.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Gryffondor</strong></h3>
+    <dfn>Gryffondor est l'une des quatre maisons à Poudlard, l’école de sorcellerie de la série Harry Potter. 
+        Cette maison est nommée d’après son fondateur, Godric Gryffondor, l'un des quatre fondateurs de Poudlard.
+    </dfn>
+</div>
+</main>
+<footer class="footer">
+<div class="footer__logolink">
+    <a href="/fr/index.html">
+        <img class="footer__debut-image" src="/public/icones/logo-blanc.svg" alt="logo du site">
+    </a>
+    <h4 class="footer__debut-texte">L'école des sortilèges</h4>
+</div>
+<div class="footer__mentionslegales">
+    <h4 class="footer__titre">MENTIONS LEGALES</h4>
+    <p class="footer__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>
+    </p>
+</div>
+<div class="footer__contact">
+    <h4 class="footer__titre">CONTACT</h4>
+    <p class="footer__texte">
+        hugo.collin@edu.univ-fcomte.com<br>
+        +33 6 45 12 54 80<br>
+        Département MMI Montébiard
+    </p>
+</div>
+<div class="footer__social">
+    <h4 class="footer__titre">SUIVEZ-NOUS</h4>
+    <ul class="footer__liste list-unstyled">
+        <li><a href="https://www.facebook.com/" aria-label="facebook">
+            <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+        </a></li>
+        <li><a href="https://www.instagram.com/" aria-label="instagram">
+            <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+        </a></li>
+        <li><a href="https://twitter.com/" aria-label="twitter">
+            <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+        </a></li>
+        <li><a href="https://youtube.com" aria-label="youtube">
+            <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+        </a></li>
+    </ul>
+    <a class="footer__icone" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+    </div>
+    <div class="footer__fin">
+    <img class="footer__fin-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI">
+    <p class="footer__fin-texte">Hugo COLLIN MMI A1</p>
+    </div>
+</footer>
+</body>
+</html>
