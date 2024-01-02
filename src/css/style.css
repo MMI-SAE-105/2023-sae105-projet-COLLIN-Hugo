@@ -18,6 +18,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/form.css";
+@import "layout/section.css";
 
 /* Components */
 @import "components/menu.css";
@@ -28,7 +29,6 @@
 @import "components/vignette.css";
 @import "components/cards.css";
 @import "components/btn.css";
-@import "components/section.css";
 @import "components/caroussel.css";
 
 @font-face {
