@@ -52,15 +52,14 @@
     margin-top: 30px;
     margin-bottom: 50px;
     position: relative;
-
 }
 .projects__title {
     font-family: 'harry_p';
     font-size: var(--heading-4);
     color: var(--couleur-texte);
     position: relative;
-    margin-right: 5rem;
-    margin-top: 1px;
+    margin-right: 4rem;
+    margin-top: 5px;
 }
 .projects__intro {
     font-family: 'noto sans', sans-serif;
@@ -72,15 +71,18 @@
     font-family: 'noto sans', sans-serif;
     font-size: var(--body-4);
     position: relative;
-    margin-top: 25px;
+    margin-top: 21px;
 }
 .projects__img-right {
     float: right;
-    width: 80px;
+    width: 85px;
+    height: 160px;
 }
 .projects__img-left {
     float: left;
-    width: 80px;
+    width: 90px;
+    height: 160px;
+
 }
 .other__separation {
     margin-top: 20px;
