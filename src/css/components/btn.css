@@ -14,3 +14,14 @@
     margin-bottom: 350px;
     font-family: 'noto sans', sans-serif;
 }
+.projects__buttom {
+    border-radius: 10px;
+    padding: 8px 20px;;
+    color: var(--blanc);
+    border: 1.5px solid var(--blanc);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'noto sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}

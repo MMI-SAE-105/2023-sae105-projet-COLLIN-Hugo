@@ -37,3 +37,52 @@
 .apropos__title {
     z-index: -1;
 }
+
+/* Autres projets*/
+.other__projects {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.projects__text { 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+.projects__title {
+    font-family: 'harry_p';
+    font-size: var(--heading-4);
+    color: var(--couleur-texte);
+    position: relative;
+    margin-right: 5rem;
+    margin-top: 1px;
+}
+.projects__intro {
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--body-3);
+    position: relative;
+    margin-right: 5rem;
+}
+.projects__legend {
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--body-4);
+    position: relative;
+    margin-top: 25px;
+}
+.projects__img-right {
+    float: right;
+    width: 80px;
+}
+.projects__img-left {
+    float: left;
+    width: 80px;
+}
+.other__separation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
