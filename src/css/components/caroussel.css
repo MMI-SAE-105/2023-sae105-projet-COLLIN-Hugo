@@ -1,5 +1,5 @@
-/* carrousel livres */
-.caroussel {
+/* carrousel livres et autres oeuvres de J.K.Rowling */
+.carrousel {
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -8,7 +8,7 @@
     text-align: center;
     gap: 30px;
 }
-.caroussel__img {
+.carrousel__img {
   width: 270px;
   height: 380px;
   position: relative;
@@ -17,7 +17,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.caroussel__img::before {
+.carrousel__img::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -25,14 +25,14 @@
   width: 100%;
   height: 50px;
 }
-.caroussel__element {
+.carrousel__element {
     flex: 1 0 80%;
     scroll-snap-align: start;
 }
-.caroussel__element figure {
+.carrousel__element figure {
     margin: 0;  
 }
-.caroussel__texte {
+.carrousel__text {
     position: relative;
     background-color: var(--couleur-des-articles);
     padding: 2rem;
@@ -42,17 +42,15 @@
     font-size: var(--heading-2);
     font-family: 'harry_p';
 }
-.caroussel::-webkit-scrollbar-track {
+.carrousel::-webkit-scrollbar-track {
     background-color: var(--noir);
 }
-.caroussel::-webkit-scrollbar {
+.carrousel::-webkit-scrollbar {
     height: 4px;
     background-color: var(--blanc);
 }
-.caroussel::-webkit-scrollbar-thumb {
+.carrousel::-webkit-scrollbar-thumb {
     background-color: var(--blanc);
 }
-
-/* carrousel mockup */
 
 

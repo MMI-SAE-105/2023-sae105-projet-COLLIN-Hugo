@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 }
-.bouton {
+.button {
     display: inline-block;
     padding: 10px 40px;;
     color: var(--blanc);
@@ -14,7 +14,7 @@
     margin-bottom: 350px;
     font-family: 'noto sans', sans-serif;
 }
-.projects__buttom {
+.projects__button {
     border-radius: 10px;
     padding: 8px 20px;;
     color: var(--blanc);

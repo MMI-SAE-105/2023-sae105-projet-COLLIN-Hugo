@@ -1,4 +1,4 @@
-.intro__texte {
+.intro__text {
     font-family: 'harry_p';
     font-size: var(--heading-2);
     line-height: 60px;
@@ -20,7 +20,7 @@
     position: absolute;
     z-index: 1;
 }
-.apropos__texte {
+.apropos__text {
     margin-top: -150px;
     position: relative;
     z-index: 2;
@@ -82,7 +82,6 @@
     float: left;
     width: 90px;
     height: 160px;
-
 }
 .other__separation {
     margin-top: 20px;

@@ -2,16 +2,16 @@
     column-count: 2;
     column-gap: 20px;
 }
-#galerie-1,
-#galerie-2,
-#galerie-3,
-#galerie-4,
-#galerie-5,
-#galerie-6,
-#galerie-7,
-#galerie-8,
-#galerie-9,
-#galerie-10 {
+#galery-1,
+#galery-2,
+#galery-3,
+#galery-4,
+#galery-5,
+#galery-6,
+#galery-7,
+#galery-8,
+#galery-9,
+#galery-10 {
     margin-bottom: -400px;
     flex: 0 0 calc(33.33% - 20px);
 }
@@ -110,16 +110,16 @@
     align-items: flex-start;
     flex-direction: column;
 }
-#card-1 .back__titre,
-#card-2 .back__titre,
-#card-3 .back__titre,
-#card-4 .back__titre,
-#card-5 .back__titre,
-#card-6 .back__titre,
-#card-7 .back__titre,
-#card-8 .back__titre,
-#card-9 .back__titre,
-#card-10 .back__titre {
+#card-1 .back__title,
+#card-2 .back__title,
+#card-3 .back__title,
+#card-4 .back__title,
+#card-5 .back__title,
+#card-6 .back__title,
+#card-7 .back__title,
+#card-8 .back__title,
+#card-9 .back__title,
+#card-10 .back__title {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -128,16 +128,16 @@
     color: var(--couleur-texte);
     margin-top: 30px;
 }
-#card-1 .back__texte,
-#card-2 .back__texte,
-#card-3 .back__texte,
-#card-4 .back__texte,
-#card-5 .back__texte,
-#card-6 .back__texte,
-#card-7 .back__texte,
-#card-8 .back__texte,
-#card-9 .back__texte,
-#card-10 .back__texte {
+#card-1 .back__text,
+#card-2 .back__text,
+#card-3 .back__text,
+#card-4 .back__text,
+#card-5 .back__text,
+#card-6 .back__text,
+#card-7 .back__text,
+#card-8 .back__text,
+#card-9 .back__text,
+#card-10 .back__text {
     content: "• ";
     text-align: center;
     font-family: 'noto sans', sans-serif;

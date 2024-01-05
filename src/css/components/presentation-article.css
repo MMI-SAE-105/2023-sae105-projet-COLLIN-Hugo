@@ -26,7 +26,7 @@
     font-family: 'noto sans', thin;
     margin-top: -75px;
   }
-  .article__titre {
+  .article__title {
     font-size: var(--heading-3);
     font-family: 'harry_p';
     color: var(--couleur-texte);
