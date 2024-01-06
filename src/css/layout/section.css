@@ -14,28 +14,44 @@
     object-fit: cover;
     z-index: 1;
 }
-.apropos__img {
-    margin: -19px;
-    margin-top: -350px;
-    position: absolute;
-    z-index: 1;
+
+/* section à propos */
+.apropos {
+    background-color: var(--couleur-des-articles);
+    margin-top: -300px;
+    padding-top: -10px;
 }
-.apropos__text {
-    margin-top: -150px;
-    position: relative;
-    z-index: 2;
+.apropos__container {
+    background-color: var(--jaune);
+    margin-bottom: 230px;
+}
+.apropos__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 20%;
 }
 .apropos__icon {
-    position: relative;
+    margin-bottom: -10px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 300px;
-    margin-top: -200px;
-    z-index: 2;
 }
 .apropos__title {
-    z-index: -1;
+    font-family: 'harry_p';
+    font-size: var(--heading-1);
+    padding-bottom: 450px;
+    letter-spacing: 4px;
+}
+.apropos__text {
+    margin-top: -400px;
+    height: 600px;
+    color: var(--blanc);
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--body-3);
+    line-height: 180%;
 }
 
 /* Autres projets*/
