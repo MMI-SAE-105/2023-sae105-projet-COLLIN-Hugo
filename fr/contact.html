@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,7 @@
     </div>
     <form>
         <label class="form__title" for="select">Sexe</label>
-        <select id="select" name="">
+        <select id="select" name="sexe">
             <option class="form__select" value="option1">Choisir</option>
             <option value="option1">Homme</option>
             <option value="option2">Femme</option>
@@ -84,12 +84,12 @@
         <textarea id="comments" name="textarea" rows="10"></textarea>
         <p class="form__legend"><span>*</span>Ces champs sont obligatoires</p>
         <div class="check-box-group">
-            <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
+            <label class="custom-checkbox" aria-label="Checkbox Label">
             <input type="checkbox">
             <span class="checkmark"></span>
             <span class="form__check">J'accepte les conditions générales d'utilisation</span>
             </label>
-            <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+            <label class="custom-checkbox" aria-label="Another Label">
             <input type="checkbox">
             <span class="checkmark"></span>
             <span class="form__check">J'accepte la politique de confidentialité.</span>
