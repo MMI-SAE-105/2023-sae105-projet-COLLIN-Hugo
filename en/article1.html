@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School of Sorcery</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="fr" href="/fr/article1.html">
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/en/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article1.html">1st Harry Potter book</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article2.html">1st Harry Potter film</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article3.html">Music "the prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article5.html">Cult quote</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/a-propos.html">About</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/glossaire.html">Glossary</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<div class="container">
+    <h1>Harry Potter and the Philosopher's Stone: The Beginning of a Magical Epic</h1>
+    <p>In this first volume of Harry Potter, the young orphan discovers the wizarding world at Hogwarts, marking the beginning 
+        of a great story of magic. An iconic work of literature that has amazed every generation.
+    </p>
+    <h5>By Hugo COLLIN<br>
+        Published on 18 October 2023
+    </h5>
+<figure class="figure__img">
+    <img src="/public/img/img-article-1.webp" alt="Harry, Rom, Hermione">
+    <figcaption class="figure__legend">Image taken from the Harry Potter film "Harry Potter and the Philosopher's Stone", 2001.
+    </figcaption>
+</figure>
+    <h4>Magic</h4>
+    <p>The release of the first book in 1997 left the literary world fascinated by a young wizard named Harry Potter, 
+        whose adventure began with the first volume, Harry Potter at Philosopher's Stone. This is the beginning of a 
+        great saga of 7 books. This magical work by author J.K. Rowling has succeeded in bringing together readers of 
+        all ages, and her books are still very popular today. The author even gave birth to a series of must-see films.
+    </p>
+    <h4>Revelation</h4>
+    <p>The story begins with the young orphan Harry Potter, whose parents are later killed by Harry's enemy. 
+        From a very early age, Harry was taken in by his aunt and uncle, the Dursleys. He led a miserable life until 
+        the day he received his letter of admission to Hogwarts School of Witchcraft and Wizardry. Rubeus Hagrid, 
+        Harry's future friend, is the one who utters the emblematic line: "You're a wizard, Harry!" This simple phrase 
+        marks the beginning of Harry's magical saga. It was then that he discovered his heritage and his potential in 
+        the wizarding world at Hogwarts.
+    </p>
+    <h4>Enchantment</h4>
+    <p>This is where most of the saga takes place and where readers will see young Potter grow up. He discovers the fascinating 
+        world of magic. Readers are transported to a world where magic works, broomsticks fly and fantastic creatures roam 
+        the Forbidden Forest. Every page of the book is imbued with J.K.Rowling's detail and imagination, creating a complex and 
+        wonderful world.
+        The success of the first volume was phenomenal, and the work is known the world over. It not only inspired a series of books, 
+        but also a film franchise that still captivates audiences around the world today. Some lines are still very well known, such 
+        as Dumbledore's words, "Happiness can be found even in the darkest moments, you just have to remember to turn on the light".
+    </p>
+    <h4>Eternity</h4>
+    <p>"Harry Potter and the Philosopher's Stone" is much more than just a story for children, and the saga as a whole 
+        is aimed at all audiences. This first volume left its mark on the world of literature and cinema. 
+        Even today, Harry Potter continues to amaze readers the world over.
+    </p>
+<div class="container__separation">
+    <img class="container__separation-hedwig" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+    <h2>Find out more</h2>
+</div>
+<div class="article">
+    <a href="/en/article6.html">
+    <div class="content">
+    <p class="article__intro">By COLLIN Hugo</p>
+    <img src="/public/img/img-vignette-jkr.webp" alt="J.K. Rowling">
+    <h3 class="article__title">J.K. Rowling: Beyond Hogwarts, a versatile writer</h3>
+    <p class="article__description">J.K. Rowling, the author of Harry Potter, has created a magical world, sold 500M+ books, 
+        and sparked debate with her views on gender.</p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more info icon">
+    </a>
+    </div>
+</div>
+<div class="container__separation">
+    <img class="container__separation-hedwig" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+    <h2>Other books</h2>
+<div class="carrousel">
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre1-harry-potter.webp" alt="couverture tome 1, Harry Potter">   
+        <p class="carrousel__text">Released 1997</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre2-harry-potter.webp" alt="couverture tome 2, Harry Potter"> 
+        <p class="carrousel__text">Released 1998</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre3-harry-potter.webp" alt="couverture tome 3, Harry Potter">
+        <p class="carrousel__text">Released 1999</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre4-harry-potter.webp" alt="couverture tome 4, Harry Potter">
+        <p class="carrousel__text">Released 2000</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre5-harry-potter.webp" alt="couverture tome 5, Harry Potter">
+        <p class="carrousel__text">Released 2003</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre6-harry-potter.webp" alt="couverture tome 6, Harry Potter">
+        <p class="carrousel__text">Released 2005</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre7-harry-potter.webp" alt="couverture tome 7, Harry Potter">
+        <p class="carrousel__text">Released 2007</p>
+    </div>
+    <div class="carrousel__element">
+        <img class="carrousel__img" src="/public/img/livre-enfant-maudit-harry-potter.webp" alt="couverture enfant maudit, Harry Potter">
+        <p class="carrousel__text">Released 2016</p>
+    </div>
+</div>
+<div class="container__sticker">
+    <a href="https://fr.wikipedia.org/wiki/Harry_Potter">
+    <div class="sticker">
+        <p class="sticker__title">HARRY POTER</p>
+        <p class="sticker__text">A young sorcerer battling the forces of evil in a captivating magical world.</p>
+        <img class="sticker__plus-info" src="/public/icones/read-more.svg" alt="more information">
+    </div>
+</div>
+</a>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/en/index.html">
+            <img class="footer__start-img" src="/public/icones/logo-blanc.svg" alt="site logo">
+        </a>
+        <h4 class="footer__start-text">The School of Sorcery</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__title">Legal Notices</h4>
+        <p class="footer__text">Project carried out as part of an educational exercise in the
+            <a href="https://mmimontbeliard.com/"><u>MMI department of Montbéliard.</u></a>.
+        </p>
+    </div>
+    <div class="footer__form">
+        <h4 class="footer__title">Contact</h4>
+        <p class="footer__text">
+            <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
+            +33 6 45 12 54 80<br>
+            4 Place Tharradin, 25200 Montbéliard, France<br>
+            <a href="/en/contact.html"><u>Contact us now!</u></a>
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__title">Follow us</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://fr-fr.facebook.com/harrypotterfilms/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="facebook logo">
+            </a></li>
+            <li><a href="https://www.instagram.com/harrypotterfilm/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="instagram logo">
+            </a></li>
+            <li><a href="https://twitter.com/HPotter_France" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="twitter logo">
+            </a></li>
+            <li><a href="https://www.youtube.com/@harrypotter" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="youtube logo">
+            </a></li>
+        </ul>
+        <a class="footer__icon" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="arrow go up"></a>
+     </div>
+     <div class="footer__end">
+        <a href="https://mmimontbeliard.com/"><img class="footer__end-logo" src="/public/icones/logo-mmi-blanc.svg" alt="MMI department logo"></a>
+        <p class="footer__end-text">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>

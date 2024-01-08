@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School of Sorcery</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="fr" href="/fr/article2.html">
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/en/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article1.html">1st Harry Potter book</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article2.html">1st Harry Potter film</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article3.html">Music "the prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article5.html">Cult quote</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/a-propos.html">About</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/glossaire.html">Glossary</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<div class="container">
+    <h1>The film adaptation of a bestseller</h1>
+    <p>Discover the magic of the film adaptation of the first volume of Harry Potter. Despite the stakes, 
+        the film is very faithful to J.K. Rowling's magical world.
+    </p>
+    <h5>By Hugo COLLIN<br>
+        Published on 18 October 2023
+    </h5>
+<figure class="figure__img">
+    <img src="/public/img/img-article-2.webp" alt="image main characters">
+    <figcaption class="figure__legend">Image taken from the Canal VOD website</figcaption>
+</figure>
+    <h4>Triumph</h4>
+    <p>In most cases, the book was a success, and the film was released shortly afterwards. 
+        This adaptation will be eagerly awaited by fans. Indeed, fans are eager to discover their books as a visual experience. 
+        The film adaptation of Harry Potter, "Harry Potter and the Philosopher's Stone", is a prime example.<br>
+        <br>
+        The first Harry Potter film was directed by Chris Columbus. Readers' and fans' expectations for the first film were very high. 
+        The director's job is not an easy one, as he must bring Hogwarts, the characters, and the story itself to life. 
+        All this is adapted for the big screen. However, in Volume 1, I was able to transcribe the whole story of the book in detail.
+    </p>
+    <h4>Marvel</h4>
+    <p>Despite the challenges, "Harry Potter and the Philosopher's Stone" is a complete success. Chris Columbus captured the hearts 
+        of fans with this first film and paved the way for a resounding film franchise. The director and his team brought the Harry 
+        Potter adventure to life with majestic sets, costumes, and special effects. Audiences can experience this story of 
+        magic with classrooms filled with magic, creatures like Near-Headless Nick and moving staircases.
+    </p>
+    <h4>Pioneer</h4>
+    <p>However, the film adaptation of the first Harry Potter book was the start of a hugely successful film series. 
+        The series continues to captivate audiences around the world from generation to generation. 
+        So, this first book shows how J.K. Rowling's literary story with a strong community can be translated into a stunning film. 
+        "Harry Potter and the Philosopher's Stone paved the way for a series of unforgettable films, marking the beginning of 
+        a beautiful magical story that continues to this day.
+    </p>
+<div class="container__separation">
+    <img class="container__separation-hedwig" src="/public/icones/logo-hedwig.svg" alt="hedwig icon">
+    <h2>Other films</h2><br>
+</div>
+<div class="cards-container">
+    <div class="card" id="card-1">
+        <div class="front"><img src="/public/img/img-cards-4.webp" alt="cover of the film: Harry Potter and the Chamber of Secrets"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Chamber of Secrets</h5>
+            <p class="back__text">Harry Potter explores the mysteries of Hogwarts in his second year.</p>
+        </div>
+    </div>
+    <div class="card" id="card-3">
+        <div class="front"><img src="/public/img/img-cards-2.webp" alt="cover of the film: Harry Potter and the Goblet of Fire"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Goblet of Fire</h5>
+            <p class="back__text">Harry Potter takes part in a perilous wizarding tournament while battling the return of Voldemort."</p>
+        </div>
+    </div>
+    <div class="card" id="card-5">
+        <div class="front"><img src="/public/img/img-cards-7.webp" alt="cover of the film: Harry Potter and the Order of the Phoenix"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Order of the Phoenix</h5>
+            <p class="back__text">Harry forms a secret alliance to counter Voldemort and confronts shocking revelations about his past.</p>
+        </div>
+    </div>
+    <div class="card" id="card-7">
+        <div class="front"><img src="/public/img/img-cards-6.webp" alt="cover of the film Harry Potter and the Deathly Hallows 2"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Deathly Hallows, Part 2</h5>
+            <p class="back__text">Harry confronts Voldemort in a final battle at Hogwarts to end the threat of the evil wizard."</p>
+        </div>
+    </div>
+    <div class="card" id="card-9">
+        <div class="front"><img src="/public/img/img-cards-crime.webp" alt="film cover : 
+            Fantastic Beasts, The Crimes of Grindelwald"></div>
+        <div class="back">
+            <h5 class="back__title">Fantastic Beasts: The Crimes of Grindelwald</h5>
+            <p class="back__text">Grindelwald is preparing for a magical war, and Newt opposes him.</p>
+        </div>
+    </div>
+    <div class="card" id="card-2">
+        <div class="front"><img src="/public/img/img-cards-5.webp" alt="film cover: Harry Potter and the Prisoner of Azkaban"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Prisoner of Azkaban</h5>
+            <p class="back__text">Harry uncovers secrets about his past while confronting an escaped criminal, Sirius Black.</p>
+        </div>
+    </div>
+    <div class="card" id="card-4">
+        <div class="front"><img src="/public/img/img-cards-8.webp" alt="film cover: Harry Potter and the Half-Blood Prince"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Half-Blood Prince</h5>
+            <p class="back__text">Harry uncovers Voldemort's secrets and loses loved ones.</p>
+        </div>
+    </div>
+    <div class="card" id="card-6">
+        <div class="front"><img src="/public/img/img-cards-3.webp" alt="film cover: Harry Potter and the Deathly Hallows 1"></div>
+        <div class="back">
+            <h5 class="back__title">Harry Potter and the Deathly Hallows, Part 1</h5>
+            <p class="back__text">Harry, Ron, and Hermione track down Voldemort's horcruxes while battling evil.</p>
+        </div>
+    </div>
+    <div class="card" id="card-8">
+        <div class="front"><img src="/public/img/img-cards-animaux.webp" alt="film cover: Fantastic Beasts"></div>
+        <div class="back">
+            <h5 class="back__title">Fantastic Beasts and Where to Find Them</h5>
+            <p class="back__text">Norbert Dragonneau hunts and battles magical threats in New York.</p>
+        </div>
+    </div>
+    <div class="card" id="card-10">
+        <div class="front"><img src="/public/img/img-cards-secret.webp" alt="film cover: Fantastic Beasts, Dumbledore's secrets 
+            Dumbledore's secrets"></div>
+        <div class="back">
+            <h5 class="back__title">Fantastic Beasts: The Secrets of Dumbledore</h5>
+            <p class="back__text">Dragonseau and Dumbledore united against Grindelwald.</p>
+        </div>
+    </div>
+<script>
+    function toggleFlip(cardNumber) {
+        var cardId = '#card-' + cardNumber;
+
+        document.querySelector(cardId).addEventListener('click', function () {
+            this.classList.toggle('flipped');
+        });
+    }
+
+    for (var i = 1; i <= 10; i++) {
+        toggleFlip(i);
+    }
+</script>
+</div>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/en/index.html">
+            <img class="footer__start-img" src="/public/icones/logo-blanc.svg" alt="site logo">
+        </a>
+        <h4 class="footer__start-text">The School of Sorcery</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__title">Legal Notices</h4>
+        <p class="footer__text">Project carried out as part of an educational exercise in the
+            <a href="https://mmimontbeliard.com/"><u>MMI department of Montbéliard.</u></a>.
+        </p>
+    </div>
+    <div class="footer__form">
+        <h4 class="footer__title">Contact</h4>
+        <p class="footer__text">
+            <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
+            +33 6 45 12 54 80<br>
+            4 Place Tharradin, 25200 Montbéliard, France<br>
+            <a href="/en/contact.html"><u>Contact us now!</u></a>
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__title">Follow us</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://fr-fr.facebook.com/harrypotterfilms/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="facebook logo">
+            </a></li>
+            <li><a href="https://www.instagram.com/harrypotterfilm/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="instagram logo">
+            </a></li>
+            <li><a href="https://twitter.com/HPotter_France" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="twitter logo">
+            </a></li>
+            <li><a href="https://www.youtube.com/@harrypotter" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="youtube logo">
+            </a></li>
+        </ul>
+        <a class="footer__icon" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="arrow go up"></a>
+     </div>
+     <div class="footer__end">
+        <a href="https://mmimontbeliard.com/"><img class="footer__end-logo" src="/public/icones/logo-mmi-blanc.svg" alt="MMI department logo"></a>
+        <p class="footer__end-text">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>

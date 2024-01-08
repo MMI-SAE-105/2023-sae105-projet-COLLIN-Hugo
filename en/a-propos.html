@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School of Sorcery</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="fr" href="/en/a-propos.html">
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/en/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article1.html">1st Harry Potter book</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article2.html">1st Harry Potter film</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article3.html">Music "the prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article5.html">Cult quote</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/en/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/a-propos.html">About</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/en/glossaire.html">Glossary</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<div class="hero__header">
+    <img class="hero__img" src="/public/img/a-propos.webp" alt="page à propos">
+    <img class="hero__icon" src="/public/icones/logo-hedwig.svg" alt="icones de hedwig">
+    <h2 class="hero__title-apropos">A propos</h2>
+</div>
+<div class="container">
+    <p>
+        Je me présente, je m’appelle Collin Hugo, je suis un étudiant de 18 ans. 
+        Je suis en train de réaliser ma première année en BUT MMI (Métiers du Multimédia et de l’Internet) 
+        à l’IUT du Nord Franche-Comté. J’ai toujours été passionné par le monde du multimédia et je suis venu en MMI 
+        pour développer mes compétences. Pour cette première année, nous devons nous lancer d’un projet de site web 
+        sur une réplique de film. Mon choix s’est porté sur la célèbre réplique de Hagrid dans le premier volume de Harry Potter, 
+        « Tu es un sorcier, Harry ». Il s’agit d’une des premières répliques culte de « Harry Potter à l’école des sorciers ». 
+        Je vais à travers mon site web, donner une belle expérience aux utilisateurs pour leur faire plonger dans le monde de 
+        la magique de la saga Harry Potter.<br>
+        <br>
+        Ce projet est bien sûr basé sur des contraintes strictes. Notre site doit être fait pour une version mobile, en deux langues, 
+        le français et l’anglais pour toucher un public international. Nous devons également respecter un calendrier de rendu 
+        avec des temps de travail assez réduit. Le site doit être constitué du page d’accueil avec plusieurs éléments, 
+        notamment les articles principaux, la réplique emblématique ou encore une petite introduction.<br>
+        <br>
+        Il faut bien prendre en compte les utilisateurs type pour notre site et nous devons garantir une expérience optimale 
+        pour nos visiteurs. Le site doit avant tout être centré sur la réplique « Tu es un sorcier, Harry ». 
+        Mon site comportera donc 7 articles détaillés sur le livre, le film, le réalisateur, etc. Ses articles 
+        seront accompagnés d’information supplémentaire comme une frise chronologique pour montrer d’autres livres 
+        ou une galerie de films en relation avec l’article sur le film Harry Potter.<br>
+        <br>
+        Nous devons utiliser l’intelligence artificielle pour la création du contenu en anglais ainsi que pour nos articles. 
+        C’est bien sûr qu’une aide puisque nous devons juste nous baser sur ce que fait l’IA. Pour cela, nous devons détailler 
+        le choix du prompt, les ajustements effectués, les résultats et pour finir ce qu’on a modifié.<br>
+        <br>
+        En résumé, ce projet a pour but la création d’un site web basé sur une réplique de film comme point de départ. 
+        Le projet doit respecter des règles et des contraintes pour optimiser au mieux notre site. C’est le premier, 
+        il nous permet donc d’apprendre les manières de travail pour un gros projet et de toucher à de nombreux outils.
+    </p>
+<div class="container__separation">
+    <img class="container__separation-hedwig" src="/public/icones/logo-hedwig.svg" alt="hedwig">
+    <h2>Autres projets</h2>
+</div>
+<section class="other__projects">
+    <p class="projects__text">Outre mon projet de site web, je souhaite mettre en avant les réalisations de mes camarades de classe.
+        Depuis septembre, chacun a travaillé sur un projet passionnant : la création d'un site web dédié à une réplique de film. Voici leur projet !
+    </p>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="https://shermanlegends.ethan-schmitt.fr/">
+            <img class="projects__img-right" src="/public/img/ethan-2.webp" alt="mockup de Éthan Schmitt">
+            <h5 class="projects__title">SHERMAN LEGENDS</h5>
+           <em class="projects__intro">“Les idéaux sont pacifiques. L’Histoire est violente.” 
+            Cette réplique est prononcée par le personnage du Sergent Wardaddy, interprété par Brad Pitt, 
+            dans le film “Fury”. 
+           </em>
+            <p class="projects__legend">SHERMAN LEGENDS - Projet de Éthan Schmitt</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="/404.html">
+            <img class="projects__img-left" src="/public/img/mockup-benjamin.webp" alt="mockup de Benjamin Bisch">
+            <h5 class="projects__title">DOBBY EST LIBRE</h5>
+           <em class="projects__intro">Bienvenue dans le monde magique de notre site dédié à Harry Potter ! 
+            Plongez dans l'univers ensorcelant de la saga qui a captivé des millions de fans à travers le monde. 
+           </em>
+            <p class="projects__legend">DOBBY EST LIBRE - Projet de Benjamin Bisch</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="https://paleo.lifefindsaway.fr/pages/en/index.html">
+            <img class="projects__img-right" src="/public/img/mockup-romain.webp" alt="mockup de Romain Grosjean">
+            <h5 class="projects__title">LIFE FINDS A WAY</h5>
+           <em class="projects__intro">Bienvenue sur "Life finds a way", un site web inspiré d'une phrase emblématique du film Jurassic Park. 
+            Entrez dans un univers de niche centré sur la franchise, les dinosaures et le paléoart !
+           </em>
+            <p class="projects__legend">LIFE FINDS A WAY - Projet de Romain Grosjean</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="https://labibliothequedemagie.edouardhashimoto.fr/fr/">
+            <img class="projects__img-left" src="/public/img/mockup-edouard.webp" alt="mockup de Édouard Hashimoto">
+            <h5 class="projects__title">BIBLIOTHÈQUE DE MAGIE</h5>
+           <em class="projects__intro">Plongeons dans un monde de sorcellerie, d'aventure et de magie, en revisitant les moments 
+            les plus emblématiques de cette saga bien-aimée créée par J.K. Rowling.
+           </em>
+            <p class="projects__legend">BIBLIOTHÈQUE DE MAGIE - Projet de Edouard Hashimoto</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="https://endlessrebirth.maxencelallemand.fr/fr/">
+            <img class="projects__img-right" src="/public/img/mockup-maxence.webp" alt="mockup de Maxence Lallemand">
+            <h5 class="projects__title">ENDLESS REBIRTH</h5>
+           <em class="projects__intro">The End of Evangelion a réussi à non seulement révolutionner un genre en déclin, 
+            mais à révolutionner l’animation japonaise.
+           </em>
+            <p class="projects__legend">ENDLESS REBIRTH - Projet de Maxence Lallemand</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="https://instant-cle.oceanerobert.fr/fr/">
+            <img class="projects__img-left" src="/public/img/mockup-oceane.webp" alt="mockup de Océane Robert">
+            <h5 class="projects__title">INSTANT CLÉ</h5>
+           <em class="projects__intro">Plonger dans l’univers de “Kung Fu Panda” et découvrez une réplique du film qui peut 
+            changer votre façon de voir les choses.  
+           </em>
+            <p class="projects__legend">INSTANT CLÉ - Projet de Océane Robert</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="http://kulture.claudesamba.fr/">
+            <img class="projects__img-right" src="/public/img/mockup-claude.webp" alt="mockup de Claude Malanda">
+            <h5 class="projects__title">KULTURE</h5>
+           <em class="projects__intro">Plongez dans un univers épique avec la légendaire phrase “Wakanda Forever”. 
+            L'héritage, la puissance et le destin de Black Panther vous attend.
+           </em>
+            <p class="projects__legend">KULTURE - Projet de Claude Malanda</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+    <div class="projects">
+        <a href="http://on-a-pas-besoin-de-route.melissapoilane.fr/">
+            <img class="projects__img-left" src="/public/img/mockup-melissa.webp" alt="mockup de Mélissa Poilâne">
+            <h5 class="projects__title">ON N'A PAS BESOIN DE ROUTE</h5>
+           <em class="projects__intro">Bienvenue dans l’univers de Retour vers le futur ! 
+            Ici la science-fiction et l’aventure font équipe pour vous faire voyager dans le temps.
+           </em>
+            <p class="projects__legend">ON N'A PAS BESOIN DE ROUTE - Projet de Mélissa Poilâne</p>
+            <div class="parent__container">
+                <button class="projects__button">Voir plus en détails</button>
+            </div>
+        </a>
+    </div>
+    <hr class="other__separation">
+</section>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/en/index.html">
+            <img class="footer__start-img" src="/public/icones/logo-blanc.svg" alt="site logo">
+        </a>
+        <h4 class="footer__start-text">The School of Sorcery</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__title">Legal Notices</h4>
+        <p class="footer__text">Project carried out as part of an educational exercise in the
+            <a href="https://mmimontbeliard.com/"><u>MMI department of Montbéliard.</u></a>.
+        </p>
+    </div>
+    <div class="footer__form">
+        <h4 class="footer__title">Contact</h4>
+        <p class="footer__text">
+            <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
+            +33 6 45 12 54 80<br>
+            4 Place Tharradin, 25200 Montbéliard, France<br>
+            <a href="/en/contact.html"><u>Contact us now!</u></a>
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__title">Follow us</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://fr-fr.facebook.com/harrypotterfilms/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="facebook logo">
+            </a></li>
+            <li><a href="https://www.instagram.com/harrypotterfilm/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="instagram logo">
+            </a></li>
+            <li><a href="https://twitter.com/HPotter_France" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="twitter logo">
+            </a></li>
+            <li><a href="https://www.youtube.com/@harrypotter" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="youtube logo">
+            </a></li>
+        </ul>
+        <a class="footer__icon" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="arrow go up"></a>
+     </div>
+     <div class="footer__end">
+        <a href="https://mmimontbeliard.com/"><img class="footer__end-logo" src="/public/icones/logo-mmi-blanc.svg" alt="MMI department logo"></a>
+        <p class="footer__end-text">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>
