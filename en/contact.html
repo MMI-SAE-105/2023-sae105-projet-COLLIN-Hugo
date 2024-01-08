@@ -7,7 +7,7 @@
     <link rel="icon" href="/public/icones/logo-blanc.svg">
     <link rel="stylesheet" type="text/css" href="/src/css/style.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <link rel="alternate" hreflang="fr" href="/fr/glossaire.html">
+    <link rel="alternate" hreflang="fr" href="/fr/contact.html">
 </head>
 <body x-data="{ atTop: true}">
     <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
@@ -57,57 +57,47 @@
 </header>
 <main>
 <div class="container">
-    <h1>Glossary</h1>
-    <h3><strong>Saga</strong></h3>
-    <dfn>A saga is a series of stories, events, or works connected by a common storyline, central theme, 
-        or recurring characters. Sagas are often narrative and can span over extended periods, encompassing multiple books, 
-        films, episodes, etc.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Hogwarts</strong></h3>
-    <dfn>Hogwarts is a fictional wizarding school created by author J.K. Rowling in the "Harry Potter" book series. 
-        It is located in Great Britain, hidden from Muggles (non-magical people), 
-        and is considered one of the most prestigious magical schools in the world.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Albus Dumbledore</strong></h3>
-    <dfn>Albus Dumbledore is one of the central characters in the series and serves as the headmaster of Hogwarts School 
-        of Witchcraft and Wizardry. He is known for his wisdom, kindness, and powerful magical abilities.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>McGonagall</strong></h3>
-    <dfn>She is a member of the staff at Hogwarts School of Witchcraft and Wizardry and holds several important positions throughout the series.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Hogwarts Express</strong></h3>
-    <dfn>It is a train that plays a crucial role in the story as it is used by young witches and wizards to travel to 
-        Hogwarts School of Witchcraft and Wizardry at the beginning of each school year.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>The Dursleys</strong></h3>
-    <dfn>The Dursleys are a family considered to be unlikable, narrow-minded, and highly anti-magic. After the death of his parents, 
-        they raise Harry Potter but treat him with disdain and neglect.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Rubeus Hagrid</strong></h3>
-    <dfn>Rubeus Hagrid is the Keeper of Keys and Grounds at Hogwarts School of Witchcraft and Wizardry. 
-        He quickly becomes a close friend of Harry Potter.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Nearly Headless Nick</strong></h3>
-    <dfn>He is a ghost residing at Hogwarts School of Witchcraft and Wizardry and is the ghost of Gryffindor House. 
-        His name comes from the fact that he was nearly beheaded, hence the nickname "Nearly Headless."
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Privet Drive</strong></h3>
-    <dfn>Privet Drive is a fictional address in the Harry Potter series by J.K. Rowling. It is the place where the Dursley family, 
-        Harry Potter's aunt and uncle's family, resides in the early books of the series.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Gryffindor</strong></h3>
-    <dfn>Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter series. 
-        This house is named after its founder, Godric Gryffindor, one of the four founders of Hogwarts.
-    </dfn>
+<div class="form__page">
+    <div class="hero__form">
+        <h1>Contact us now!</h1>
+        <p>Please do not hesitate to contact us if you encounter any problems on our site. 
+            If you also have any questions, we'll be happy to help.
+        </p>
+        <img class="hero__form-img" src="/public/img/contact.webp" alt="contact image">
+    </div>
+    <form>
+        <label class="form__title" for="select">Gender</label>
+        <select id="select" name="sexe">
+            <option class="form__select" value="option1">Choisir</option>
+            <option value="option1">Man</option>
+            <option value="option2">Woman</option>
+            <option value="option2">No binary</option>
+            <option value="option2">Do not answer</option>
+        </select>
+        <label class="form__title" for="name">First and last name<span>*</span></label>
+        <input id="name" type="text" name="name">
+        <label class="form__title" for="email">Email<span>*</span></label>
+        <input id="email" type="text" name="email">
+        <label class="form__title" for="phone">Telephone number</label>
+        <input id="phone" type="text" name="phone">
+        <label class="form__title" for="comments">Your message<span>*</span></label>
+        <textarea id="comments" name="textarea" rows="10"></textarea>
+        <p class="form__legend"><span>*</span>These fields are mandatory.</p>
+        <div class="check-box-group">
+            <label class="custom-checkbox" aria-label="Checkbox Label">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="form__check">I accept the general conditions of use.</span>
+            </label>
+            <label class="custom-checkbox" aria-label="Another Label">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="form__check">I accept the privacy policy.</span>
+            </label>
+        </div>
+        <input type="submit">
+    </form>
+</div>
 </div>
 </main>
 <footer class="footer">

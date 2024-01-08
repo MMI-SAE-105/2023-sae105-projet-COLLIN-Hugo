@@ -7,7 +7,7 @@
     <link rel="icon" href="/public/icones/logo-blanc.svg">
     <link rel="stylesheet" type="text/css" href="/src/css/style.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <link rel="alternate" hreflang="fr" href="/fr/glossaire.html">
+    <link rel="alternate" hreflang="fr" href="/fr/deroulant.html">
 </head>
 <body x-data="{ atTop: true}">
     <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
@@ -57,57 +57,91 @@
 </header>
 <main>
 <div class="container">
-    <h1>Glossary</h1>
-    <h3><strong>Saga</strong></h3>
-    <dfn>A saga is a series of stories, events, or works connected by a common storyline, central theme, 
-        or recurring characters. Sagas are often narrative and can span over extended periods, encompassing multiple books, 
-        films, episodes, etc.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Hogwarts</strong></h3>
-    <dfn>Hogwarts is a fictional wizarding school created by author J.K. Rowling in the "Harry Potter" book series. 
-        It is located in Great Britain, hidden from Muggles (non-magical people), 
-        and is considered one of the most prestigious magical schools in the world.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Albus Dumbledore</strong></h3>
-    <dfn>Albus Dumbledore is one of the central characters in the series and serves as the headmaster of Hogwarts School 
-        of Witchcraft and Wizardry. He is known for his wisdom, kindness, and powerful magical abilities.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>McGonagall</strong></h3>
-    <dfn>She is a member of the staff at Hogwarts School of Witchcraft and Wizardry and holds several important positions throughout the series.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Hogwarts Express</strong></h3>
-    <dfn>It is a train that plays a crucial role in the story as it is used by young witches and wizards to travel to 
-        Hogwarts School of Witchcraft and Wizardry at the beginning of each school year.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>The Dursleys</strong></h3>
-    <dfn>The Dursleys are a family considered to be unlikable, narrow-minded, and highly anti-magic. After the death of his parents, 
-        they raise Harry Potter but treat him with disdain and neglect.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Rubeus Hagrid</strong></h3>
-    <dfn>Rubeus Hagrid is the Keeper of Keys and Grounds at Hogwarts School of Witchcraft and Wizardry. 
-        He quickly becomes a close friend of Harry Potter.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Nearly Headless Nick</strong></h3>
-    <dfn>He is a ghost residing at Hogwarts School of Witchcraft and Wizardry and is the ghost of Gryffindor House. 
-        His name comes from the fact that he was nearly beheaded, hence the nickname "Nearly Headless."
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Privet Drive</strong></h3>
-    <dfn>Privet Drive is a fictional address in the Harry Potter series by J.K. Rowling. It is the place where the Dursley family, 
-        Harry Potter's aunt and uncle's family, resides in the early books of the series.
-    </dfn>
-    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="magic wand">
-    <h3><strong>Gryffindor</strong></h3>
-    <dfn>Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter series. 
-        This house is named after its founder, Godric Gryffindor, one of the four founders of Hogwarts.
-    </dfn>
+<img class="hero__img-scrolling" src="/public/img/3-perso.webp" alt="Ron, Hermione, Harry">
+<div class="article">
+    <a href="/en/article1.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-livre.webp" alt="image from the book Harry Potter, the Philosopher's Stone">
+    <h3 class="article__title">Harry Potter and the Sorcerer's Stone: The Beginning of the Magical Journey</h3>
+    <p class="article__description">The first book of a beloved film series, written by J.K. Rowling, 
+        where magic comes to life and transports us to an enchanted world of wizardry and friendship.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article2.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-film.webp" alt="image from the film Harry Potter, the Philosopher's Stone">
+    <h3 class="article__title">The Cinematic Adaptation of a Bestseller</h3>
+    <p class="article__description">In the first Harry Potter film, magic comes to life on screen with an epic adventure 
+        that continues to enchant audiences to this day.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article3.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/test-3.webp" alt="image music: the prologue">
+    <h3 class="article__title">The Magic of the Prologue by John Williams</h3>
+    <p class="article__description">The enchanting wand of emotion that opens the world of Harry Potter to the audience 
+        and leaves an indelible mark throughout the saga.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article4.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-chris.webp" alt="image by Chris Columbus">
+    <h3 class="article__title">Chris Columbus: The Filmmaker Behind Harry Potter's Magical Chapters</h3>
+    <p class="article__description">Iconic director Chris Columbus brings the magic of Harry Potter to the screen, 
+        marking the start of an epic film journey.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article5.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-hagrid.webp" alt="image by Hagrid">
+    <h3 class="article__title">"The Quote: “You're a wizard, Harry”</h3>
+    <p class="article__description">This iconic quote is an unforgettable moment in the Harry Potter saga. 
+        Uttered by Rubeus Hagrid, it opens the door to the magical world for Harry.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article6.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-jkr.webp" alt="image by J.K.Rowling">
+    <h3 class="article__title">J.K. Rowling: Beyond Hogwarts, a versatile writer</h3>
+    <p class="article__description">J.K. Rowling, the author of Harry Potter, has created a magical world, sold 500M+ books, 
+        and sparked debate with her views on gender.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/en/article7.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-john.webp" alt="image de John Williams">
+    <h3 class="article__title">John Williams: Maestro of Film Musical Composition</h3>
+    <p class="article__description">Legendary composer, famous for the magical Harry Potter soundtrack. His music forges 
+        its legacy in popular culture.
+    </p>
+    <img class="article__plus-info" src="/public/icones/read-more.svg" alt="more information"></a>
+    </div>
+</div>
 </div>
 </main>
 <footer class="footer">
