@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School of Sorcery</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="fr" href="/fr/glossaire.html">
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/fr/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article1.html">1st Harry Potter book</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article2.html">1st Harry Potter film</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article3.html">Music "the prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article5.html">Cult quote</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/a-propos.html">About</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/glossaire.html">Glossary</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<div class="container">
+    <h1>Glossary</h1>
+    <h3><strong>Saga</strong></h3>
+    <dfn>A saga is a series of stories, events, or works connected by a common storyline, central theme, 
+        or recurring characters. Sagas are often narrative and can span over extended periods, encompassing multiple books, 
+        films, episodes, etc.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Poudlard</strong></h3>
+    <dfn>Poudlard est une école de sorcellerie fictive créée par l'auteure J.K. Rowling dans la série de livres "Harry Potter". 
+        Elle est située en Grande-Bretagne, cachée des moldus (personnes sans pouvoirs magiques), 
+        et est considérée comme l'une des écoles de magie les plus prestigieuses au monde.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Albus Dumbledore</strong></h3>
+    <dfn>Albus Dumbledore est l'un des personnages centraux de la série et occupe le poste de directeur de l’école Poudlard, 
+        l’école de sorcellerie. Il est réputé pour sa sagesse, sa bonté et ses puissantes compétences magiques.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>McGonagall</strong></h3>
+    <dfn>Elle est un membre du personnel de l’école de sorcellerie Poudlard et occupe plusieurs postes importants tout au long de la série.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Poudlard Express</strong></h3>
+    <dfn>Il s’agit d’un train joue un rôle crucial dans l'histoire, car il est utilisé par les jeunes sorciers pour se rendre à Poudlard, 
+        l’école de sorcellerie, au début de chaque année scolaire.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Les Dursley</strong></h3>
+    <dfn>Les Dursley sont une famille considérée comme antipathiques, bornés et très anti-magie. Après la mort de ses parents, 
+        ils élèvent Harry Potter, mais le traitent avec mépris et négligence.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Rubeus Hagrid</strong></h3>
+    <dfn>Rubeus Hagrid est le gardien des clés et des créatures magiques à l’école de sorcellerie Poudlard. 
+        Il devient très vite l’ami de Harry Potter.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Nick-Quasi-Sans-Tete</strong></h3>
+    <dfn>Il est un fantôme résidant à Poudlard, l’école de sorcellerie, et est le fantôme de la maison Gryffondor. 
+        Son nom provient du fait qu'il a presque été décapité, d'où le surnom "Quasi-Sans-Tête."
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Privet Drive</strong></h3>
+    <dfn>Privet Drive est une adresse fictive dans la série Harry Potter de J.K. Rowling. 
+        C'est le lieu où réside la famille Dursley, la famille de la tante et de l'oncle de Harry Potter, 
+        dans les premiers livres de la série.
+    </dfn>
+    <img class="container__separation-baguette" src="/public/icones/baguette.svg" alt="baguette magique">
+    <h3><strong>Gryffondor</strong></h3>
+    <dfn>Gryffondor est l'une des quatre maisons à Poudlard, l’école de sorcellerie de la série Harry Potter. 
+        Cette maison est nommée d’après son fondateur, Godric Gryffondor, l'un des quatre fondateurs de Poudlard.
+    </dfn>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__start-img" src="/public/icones/logo-blanc.svg" alt="logo du site">
+        </a>
+        <h4 class="footer__start-text">L'école des sortilèges</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__title">Mentions Légales</h4>
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département
+            <a href="https://mmimontbeliard.com/"><u>MMI de Montbéliard</u></a>.
+        </p>
+    </div>
+    <div class="footer__form">
+        <h4 class="footer__title">Contact</h4>
+        <p class="footer__text">
+            <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
+            +33 6 45 12 54 80<br>
+            4 Place Tharradin, 25200 Montbéliard, France<br>
+            <a href="/fr/contact.html"><u>Contactez-nous !</u></a>
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__title">Suivez-nous</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://fr-fr.facebook.com/harrypotterfilms/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="logo facebook">
+            </a></li>
+            <li><a href="https://www.instagram.com/harrypotterfilm/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="logo instagram">
+            </a></li>
+            <li><a href="https://twitter.com/HPotter_France" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="logo twitter">
+            </a></li>
+            <li><a href="https://www.youtube.com/@harrypotter" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="logo youtube">
+            </a></li>
+        </ul>
+        <a class="footer__icon" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="flèche monter"></a>
+     </div>
+     <div class="footer__end">
+        <a href="https://mmimontbeliard.com/"><img class="footer__end-logo" src="/public/icones/logo-mmi-blanc.svg" alt="logo du département MMI"></a>
+        <p class="footer__end-text">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>

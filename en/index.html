@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School of Sorcery</title>
+    <link rel="icon" href="/public/icones/logo-blanc.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="fr" href="/fr/index.html">
+</head>
+<body x-data="{ atTop: true}">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
+          <a href="/fr/index.html">
+            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__end">
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article1.html">1st Harry Potter book</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article2.html">1st Harry Potter film</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article3.html">Music "the prologue"</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article5.html">Cult quote</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/article7.html">John Williams</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/a-propos.html">About</a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="/fr/glossaire.html">Glossary</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main id="monter">
+    <div class="hero">
+        <div class="hero__header">
+            <h1 class="hero__title">The School<br>of Sorcery</h1>
+            <figure class="hero__img">
+                <img src="/public/img/accueil.webp" alt="home image">
+            </figure>
+        </div>
+    </div>
+<div class="container">
+<section class="intro">
+    <h3 class="intro__text">Immerse yourself in the magic right now!</h3>
+    <img class="intro__pattern" src="/public/icones/pas-vert.svg" alt="green colour step icon">
+    <video class="intro__video-fr" controls><source src="/public/video/video-fr.mp4" type="video/mp4"></video>
+    <img class="intro__contour" src="/public/icones/contour-de-video.svg" alt="video outline">
+</section>
+<section class="alaune__container">
+    <div class="container__separation">
+        <img class="container__separation-hedwig" src="/public/icones/logo-hedwidg.svg" alt="Hedwig logo">
+        <h2>Headlines</h2>
+    </div>
+<div class="article">
+    <a href="/fr/article1.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-livre.webp" alt="image from the book Harry Potter, the Philosopher's Stone">
+    <h3 class="article__title">Harry Potter and the Sorcerer's Stone: The Beginning of the Magical Journey</h3>
+    <p class="article__description">The first book of a beloved film series, written by J.K. Rowling, where magic comes 
+        to life and transports us to an enchanted world of wizardry and friendship.
+    </p>
+    <img class="article__plus-info" src="/public/icones/plus-info.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/fr/article2.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-film.webp" alt="image from the film Harry Potter, the Philosopher's Stone">
+    <h3 class="article__title">The Cinematic Adaptation of a Bestseller</h3>
+    <p class="article__description">In the first Harry Potter film, magic comes to life on screen with an epic adventure 
+        that continues to enchant audiences to this day.
+    </p>
+    <img class="article__plus-info" src="/public/icones/plus-info.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/fr/article3.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/test-3.webp" alt="image music: the prologue">
+    <h3 class="article__title">The Magic of the Prologue by John Williams</h3>
+    <p class="article__description">The enchanting wand of emotion that opens the world of Harry Potter to 
+        the audience and leaves an indelible mark throughout the saga.
+    </p>
+    <img class="article__plus-info" src="/public/icones/plus-info.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/fr/article4.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-chris.webp" alt="image by Chris Columbus">
+    <h3 class="article__title">Chris Columbus: The Filmmaker Behind Harry Potter's Magical Chapters</h3>
+    <p class="article__description">Iconic director Chris Columbus brings the magic of Harry Potter to the screen, 
+        marking the start of an epic film journey.
+    </p>
+    <img class="article__plus-info" src="/public/icones/plus-info.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="article">
+    <a href="/fr/article5.html">
+    <div class="content">
+    <p class="article__intro">By Hugo COLLIN</p>
+    <img src="/public/img/img-vignette-hagrid.webp" alt="image by Hagrid">
+    <h3 class="article__title">"The Quote: “You're a wizard, Harry”</h3>
+    <p class="article__description">This iconic quote is an unforgettable moment in the Harry Potter saga. 
+        Uttered by Rubeus Hagrid, it opens the door to the magical world for Harry.
+    </p>
+    <img class="article__plus-info" src="/public/icones/plus-info.svg" alt="more information"></a>
+    </div>
+</div>
+<div class="parent__container">
+    <a href="/fr/deroulant.html" class="button">Read more</a>
+</div>
+</section>
+
+<section class="apropos">
+    <img class="apropos__icon" src="/public/icones/logo-hedwidg.svg" alt="logo de Hedwig"/>
+    <h2 class="apropos__title">About</h2>
+    <img class="apropos__img" src="/public/img/a-propos.webp" alt="image de l'école des sorciers">
+    <p class="apropos__text">This project is of course based on strict constraints. Our site must be designed for a mobile version, 
+        in two languages, French and English, to reach an international audience. We also have to respect 
+        a rendering schedule with fairly short working times. The site must consist of a home page with several elements, 
+        including the main articles, the emblematic line and a short introduction.
+    </p>
+    <div class="parent__container">
+        <a href="/fr/a-propos.html" class="apropos__button">Read more</a>
+    </div>
+</section>
+
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__logolink">
+        <a href="/fr/index.html">
+            <img class="footer__start-img" src="/public/icones/logo-blanc.svg" alt="site logo">
+        </a>
+        <h4 class="footer__start-text">The School of Sorcery</h4>
+    </div>
+    <div class="footer__mentionslegales">
+        <h4 class="footer__title">Legal Notices</h4>
+        <p class="footer__text">Project carried out as part of an educational exercise in the
+            <a href="https://mmimontbeliard.com/"><u>MMI department of Montbéliard.</u></a>.
+        </p>
+    </div>
+    <div class="footer__form">
+        <h4 class="footer__title">Contact</h4>
+        <p class="footer__text">
+            <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
+            +33 6 45 12 54 80<br>
+            4 Place Tharradin, 25200 Montbéliard, France<br>
+            <a href="/fr/contact.html"><u>Contact us now!</u></a>
+        </p>
+    </div>
+    <div class="footer__social">
+        <h4 class="footer__title">Follow us</h4>
+        <ul class="footer__liste list-unstyled">
+            <li><a href="https://fr-fr.facebook.com/harrypotterfilms/" aria-label="facebook">
+                <img src="/public/icones/facebook-blanc.svg" alt="facebook logo">
+            </a></li>
+            <li><a href="https://www.instagram.com/harrypotterfilm/" aria-label="instagram">
+                <img src="/public/icones/instagram-blanc.svg" alt="instagram logo">
+            </a></li>
+            <li><a href="https://twitter.com/HPotter_France" aria-label="twitter">
+                <img src="/public/icones/twitter-blanc.svg" alt="twitter logo">
+            </a></li>
+            <li><a href="https://www.youtube.com/@harrypotter" aria-label="youtube">
+                <img src="/public/icones/youtube-blanc.svg" alt="youtube logo">
+            </a></li>
+        </ul>
+        <a class="footer__icon" href="#monter"><img src="/public/icones/fleche-remonte-blanc.svg" alt="arrow go up"></a>
+     </div>
+     <div class="footer__end">
+        <a href="https://mmimontbeliard.com/"><img class="footer__end-logo" src="/public/icones/logo-mmi-blanc.svg" alt="MMI department logo"></a>
+        <p class="footer__end-text">Hugo COLLIN MMI A1</p>
+     </div>
+</footer>
+</body>
+</html>
