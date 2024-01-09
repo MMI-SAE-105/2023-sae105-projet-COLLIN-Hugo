@@ -10,50 +10,50 @@
     <link rel="alternate" hreflang="fr" href="/fr/article7.html">
 </head>
 <body x-data="{ atTop: true}">
-    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
-        :class="{ 'header--atTop' : }">
-        <div class="header__start">
-          <a href="/en/index.html">
-            <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
-          </a>
-        </div>
-        <div class="header__end">
-          <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-            <span class="menu-btn__bar"></span>
-          </button>
-          <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled">
-              <li class="menu__item">
-                <a class="menu__link" href="/en/article1.html">1st Harry Potter book</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/en/article2.html">1st Harry Potter film</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/en/article3.html">Music "the prologue"</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/en/article4.html">Chris Columbus</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/en/article5.html">Cult quote</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="/en/article6.html">J.K.Rowling</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/en/article7.html">John Williams</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/en/a-propos.html">About</a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="/en/glossaire.html">Glossary</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )":class="{ 'header--atTop' : }">
+    <div class="header__start">
+        <a href="/en/index.html">
+        <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo"/>
+        </a>
+    </div>
+    <a href="/fr/article7.html"><img class="header__langue" src="/public/icones/logo-fr.svg" alt="language change icon"></a>
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+        @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+            <a class="menu__link" href="/en/article1.html">1st Harry Potter book</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/article2.html">1st Harry Potter film</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/article3.html">Music "the prologue"</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/article4.html">Chris Columbus</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="/en/article5.html">Cult quote</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/article6.html">J.K.Rowling</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="/en/article7.html">John Williams</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="/en/a-propos.html">About</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="/en/glossaire.html">Glossary</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
 </header>
 <main>
 <div class="container">

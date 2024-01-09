@@ -10,13 +10,13 @@
     <link rel="alternate" hreflang="en" href="/en/article7.html">
 </head>
 <body x-data="{ atTop: true}">
-<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
-    :class="{ 'header--atTop' : }">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )":class="{ 'header--atTop' : }">
 <div class="header__start">
     <a href="/fr/index.html">
-    <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
+        <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
     </a>
 </div>
+<a href="/en/article7.html"><img class="header__langue" src="/public/icones/logo-en.svg" alt="icone changement de langue"></a>
 <div class="header__end">
     <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
         @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">

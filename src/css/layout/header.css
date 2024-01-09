@@ -2,6 +2,7 @@
   background-color : var(--couleur-des-articles);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
   display: flex;
@@ -16,10 +17,12 @@
   right: 0;
   height: 70px;
   margin-right: 0.8rem;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 .header__logo {
+  display: flex;
   position: fixed;
+  width: 15%;
   height: 60px;
   margin-left: 1rem;
   margin-top: 20px;
