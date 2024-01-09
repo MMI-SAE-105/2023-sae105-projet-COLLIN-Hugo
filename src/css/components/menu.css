@@ -2,12 +2,11 @@
   display: block;
   align-items: center;
   padding: 12px 24px;
-  font-family: 'noto sans', light;
-  font-size: var(--body-2);
-  font-size: 20px;
-  font-weight: 600;
+  font-family: 'noto sans', sans-serif;
+  font-size: var(--heading-2-1);
   text-decoration: none;
   transition-duration: .25s;
+  line-height: 30px;
 }
 .menu {
   visibility: hidden;

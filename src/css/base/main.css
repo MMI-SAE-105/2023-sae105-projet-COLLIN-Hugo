@@ -52,6 +52,14 @@ h5 {
     margin-bottom: 1px;
     margin-left: 0;
 }
+.menu__line {
+    width: 70px;
+    height: 1px;
+    background-color: var(--blanc);
+    margin-bottom: -8px;
+    margin-top: 8px;
+
+}
 .a {
   text-decoration: none;
 }

@@ -12,6 +12,7 @@
     font-size: var(--heading-3);
     color: var(--couleur-texte);
     margin-left: 1rem;
+    text-transform: uppercase;
 }
 .sticker__text {
     color: var(--blanc);

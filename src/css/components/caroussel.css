@@ -6,6 +6,7 @@
     scroll-snap-type: x mandatory;
     text-align: center;
     gap: 30px;
+    margin: 0.5rem;
 }
 .carrousel__img {
     width: 100%;

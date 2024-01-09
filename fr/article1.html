@@ -10,7 +10,8 @@
     <link rel="alternate" hreflang="en" href="/en/article1.html">
 </head>
 <body x-data="{ atTop: true}">
-<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )":class="{ 'header--atTop' : }">
+<header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+    :class="{ 'header--atTop' : }">
 <div class="header__start">
     <a href="/fr/index.html">
     <img class="header__logo" src="/public/icones/logo-blanc.svg" alt="logo" />
@@ -27,27 +28,35 @@
         <li class="menu__item">
         <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
         <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
         <a class="menu__link" href="/fr/article3.html">Musique "le prologue"</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
         <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
             <a class="menu__link" href="/fr/article5.html">Réplique</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
         <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
             <a class="menu__link" href="/fr/article7.html">John Williams</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
             <a class="menu__link" href="/fr/a-propos.html">À propos</a>
         </li>
+        <hr class="menu__line">
         <li class="menu__item">
             <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
         </li>
@@ -154,7 +163,7 @@
 </div>
 <div class="container__sticker" onclick="window.location.href='//fr.wikipedia.org/wiki/Harry_Potter';">
     <div class="sticker">
-        <p class="sticker__title">HARRY POTER</p>
+        <p class="sticker__title">Harry Potter</p>
         <p class="sticker__text">Jeune sorcier luttant contre les forces du mal dans un monde magique captivant.</p>
         <img class="sticker__plus-info" src="/public/icones/plus-info.svg" alt="plus d'informations">
     </div>
