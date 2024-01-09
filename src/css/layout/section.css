@@ -69,7 +69,6 @@
     font-size: var(--heading-4);
     color: var(--couleur-texte);
     position: relative;
-    margin-right: 4rem;
     margin-top: 5px;
 }
 .projects__intro {
@@ -91,7 +90,7 @@
 }
 .projects__img-left {
     float: left;
-    width: 90px;
+    width: 95px;
     height: 160px;
 }
 .other__separation {
