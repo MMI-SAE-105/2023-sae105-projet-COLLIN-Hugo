@@ -21,9 +21,10 @@
   opacity: 1;
 }
 .menu__list {
-  margin-top: 15vh;
+  margin-top: 9vh;
   text-align: center;
   align-items: center;
+  
 }
 .menu__item {
   margin-top: 5%;
