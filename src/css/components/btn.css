@@ -5,27 +5,22 @@
 .button {
     display: inline-block;
     padding: 10px 40px;;
-    color: var(--blanc);
+    font-family: 'noto sans', sans-serif;
     border: 2px solid var(--blanc);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 70px;
     margin-bottom: 350px;
-    font-family: 'noto sans', sans-serif;
 }
 .projects__button {
-    display: inline-flex;
     border-radius: 10px;
-    padding: 6px 15px;
-    color: var(--blanc);
+    padding: 6px 18px;
     border: 1.5px solid var(--blanc);
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'noto sans', sans-serif;
     margin-top: 20px;
-    margin-bottom: 5px;
-
 }
 .apropos__button {
     display: inline-block;
@@ -38,4 +33,14 @@
     margin-top: -350px;
     margin-bottom: 350px;
     font-family: 'noto sans', sans-serif;
+}
+.button__404 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0e0e0e;
+    color: var(--couleur-texte);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
 }

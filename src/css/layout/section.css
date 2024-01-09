@@ -17,7 +17,6 @@
 
 /* section à propos */
 .apropos__img {
-    width: 100%;
     height: 100%;
     position: absolute;
     margin: 0 -20px;
@@ -30,7 +29,6 @@
     margin-right: auto;
     display: block;
     z-index: 1;
-    margin-top: -180px;
 }
 .apropos__title {
     font-family: 'harry_p';
@@ -40,10 +38,8 @@
 }
 .apropos__text {
     height: 600px;
-    color: var(--blanc);
     font-family: 'noto sans', sans-serif;
     font-size: var(--body-3);
-    line-height: 180%;
     z-index: 1;
     margin-top: 250px;
     text-align: center;
@@ -52,16 +48,11 @@
 /* Autres projets*/
 .other__projects {
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 .projects {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 }
 .projects__text { 
-    margin-top: 30px;
-    margin-bottom: 50px;
     position: relative;
 }
 .projects__title {

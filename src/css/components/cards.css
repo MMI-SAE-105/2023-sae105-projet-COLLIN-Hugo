@@ -10,7 +10,6 @@
 .card .front,
 .card .back {
     position: relative;
-
     text-align: left;
     backface-visibility: hidden;
     transform-style: preserve3d;

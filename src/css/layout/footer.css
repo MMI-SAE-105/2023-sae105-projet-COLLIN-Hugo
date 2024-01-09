@@ -2,56 +2,37 @@
     background-color: var(--couleur-des-articles);
     margin-top: 100px;
 }
-.footer__logoLink {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    display:flex;
-    margin-left: 1rem;
-}
 .footer__start-img {
-    width: 70px;
     margin-left: 1rem;
     margin-top: 2rem;
 }
 .footer__start-text {
-    display: flex;
-    align-items: center;
     font-family: 'noto sans', sans-serif;
     font-size: var(--body-2);
     color: var(--blanc);
     margin-block-end: 50px;
     margin-left: 7rem;
     margin-top: -3rem;
-    margin-bottom: 5rem;
 }
 .footer__title {
     font-family: 'noto sans', sans-serif;
-    font-size: 1rem;
     font-size: var(--body-3);
-    color: var(--couleur-texte);
     margin-block-end: 50px;
     margin-left: 1rem;
     text-transform: uppercase;
 }
 .footer__text {
     font-family: 'noto sans', sans-serif;
-    font-size: 0.75rem;
     font-size: var(--body-3);
-    color: var(--blanc);
-    text-align: left;
     margin-top: -3rem;
     margin-left: 1rem;
-    margin-right: 1rem;
     text-decoration: none;
 }
 .footer__liste {
-    color: var(--blanc);
-     display: flex;
-     align-items: center;
-     gap: 1rem;
-     margin-left: 1rem;
-     margin-top: -30px;
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-top: -30px;
 }
 .footer__end {
     display: flex;
@@ -64,16 +45,13 @@
     width: 50px;
 }
 .footer__end-text {
-    display: flex;
     font-family: 'noto sans', sans-serif;
-    font-size: 0.56rem;
     font-size: var(--body-4);
-    color: var(--blanc);
     margin-left: 1rem;
     padding-top: 3rem;
 }
 .footer__icon {
     position: absolute;
-    margin-left: 17rem;
+    right: 50px;
     margin-top: -5rem;
 }

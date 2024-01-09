@@ -23,11 +23,10 @@
   text-align:center;
 }
 .animate-404 {
-  margin:80px auto 0;
-  overflow:hidden;  
-  width:270px;
-  height:270px;  
-  position:relative;
+  margin: 80px auto 0; 
+  width: 270px;
+  height: 270px;  
+  position: relative;
   background-color: var(--couleur-fond);
   border:1px solid var(--couleur-fond);
   box-shadow: inset 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
@@ -37,23 +36,9 @@
     margin: 0;
     font-family: 'harry_p';
     color: var(--couleur-texte);
-    padding-top: -250px;
 }
 .error-text {
     font-size: 14px;
     font-family: 'noto sans', sans-serif;
     color: var(--couleur-texte);
-    margin: 0;
-    padding-top: 10px;
-}
-a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #0e0e0e;
-    color: var(--couleur-texte);
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 70px;
 }
