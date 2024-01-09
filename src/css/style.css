@@ -30,6 +30,7 @@
 @import "components/cards.css";
 @import "components/btn.css";
 @import "components/caroussel.css";
+@import "components/citation.css";
 
 @font-face {
     font-family: 'harry_p';

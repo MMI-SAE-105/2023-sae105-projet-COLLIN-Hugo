@@ -1,0 +1,14 @@
+.citation__container {
+    color: var(--blanc);
+}
+.citation__text {
+    font-family: 'harry p';
+    text-align: center;
+    font-size: var(--heading-3);
+    line-height: 50px;
+}
+.citation__name {
+    font-family: 'noto sans', sans-serif;
+    font-size: var(--body-4);
+    text-align: right;
+}
