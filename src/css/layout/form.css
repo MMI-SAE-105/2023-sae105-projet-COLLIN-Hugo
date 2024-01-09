@@ -1,7 +1,6 @@
 .form__page * {
   box-sizing: border-box;
 }
-
 form {
   max-width: 340px;
   margin: 50px auto;
