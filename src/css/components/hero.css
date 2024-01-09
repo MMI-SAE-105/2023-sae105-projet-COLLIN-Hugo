@@ -5,7 +5,7 @@
   flex-direction: column;
   margin-bottom: -150px;
 }
-/* hero page d'accuiel*/
+/* hero page d'accueil*/
 .hero__img {
   position: absolute;
   inset: 0;
@@ -37,6 +37,12 @@
   margin-left: 1rem;
 }
 /* hero à propos */
+.hero__header-apropos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
 .hero__img-apropos {
 position: absolute;
 inset: 0;
