@@ -11,7 +11,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 70px;
-    margin-bottom: 350px;
+    margin-bottom: 150px;
 }
 .projects__button {
     border-radius: 10px;
@@ -23,6 +23,7 @@
     margin-top: 20px;
 }
 .apropos__button {
+    position: absolute;
     display: inline-block;
     padding: 10px 40px;;
     color: var(--blanc);
@@ -31,7 +32,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-top: -350px;
-    margin-bottom: 350px;
+
     font-family: 'noto sans', sans-serif;
 }
 .button__404 {
