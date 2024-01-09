@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'" id="monter">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="icon" href="/public/icones/logo-blanc.svg">
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="alternate" hreflang="en" href="/en/a-propos.html">
 </head>
 <body x-data="{ atTop: true}">
 <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
@@ -56,8 +57,8 @@
 </header>
 <main>
 <div class="hero__header">
-    <img class="hero__img" src="/public/img/a-propos.webp" alt="page à propos">
-    <img class="hero__icon" src="/public/icones/logo-hedwig.svg" alt="icones de hedwig">
+    <img class="hero__img-apropos" src="/public/img/a-propos.webp" alt="page à propos">
+    <img class="hero__icon-apropos" src="/public/icones/logo-hedwig.svg" alt="icones de hedwig">
     <h2 class="hero__title-apropos">A propos</h2>
 </div>
 <div class="container">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'" id="monter">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="icon" href="/public/icones/logo-blanc.svg">
     <link rel="stylesheet" type="text/css" href="/src/css/style.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <link rel="alternate" hreflang="fr" href="/en/a-propos.html">
+    <link rel="alternate" hreflang="fr" href="/fr/a-propos.html">
 </head>
 <body x-data="{ atTop: true}">
     <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
@@ -59,7 +59,7 @@
 <div class="hero__header">
     <img class="hero__img" src="/public/img/a-propos.webp" alt="page à propos">
     <img class="hero__icon" src="/public/icones/logo-hedwig.svg" alt="icones de hedwig">
-    <h2 class="hero__title-apropos">A propos</h2>
+    <h2 class="hero__title-apropos">About</h2>
 </div>
 <div class="container">
     <p>My name is Collin Hugo and I'm an 18-year-old student. I'm currently doing my first year in BUT MMI (Métiers du Multimédia et 
