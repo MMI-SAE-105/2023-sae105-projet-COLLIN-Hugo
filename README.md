@@ -1,7 +1,7 @@
 - NOM : Collin
 - PRÉNOM : Hugo
 - URL du site : https://l-ecole-des-sortileges.hugo-collin.fr
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/Uelcnq6qylxY7WZn1BtPEu/Projet-1?type=design&node-id=185%3A0&mode=design&t=FAKCeDQ8iW1XOp2K-1
 
 # Structure de départ pour le projet individuel.
 
