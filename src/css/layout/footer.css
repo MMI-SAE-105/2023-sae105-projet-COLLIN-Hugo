@@ -26,6 +26,7 @@
     font-size: var(--body-3);
     margin-top: -3rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
 }
 .footer__liste {
