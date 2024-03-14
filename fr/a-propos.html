@@ -19,41 +19,38 @@
 </div>
 <a href="/en/a-propos.html"><img class="header__langue" src="/public/icones/logo-en.svg" alt="icone changement de langue"></a>
 <div class="header__end">
-<button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
-@pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-<span class="menu-btn__bar"></span>
-</button>
-<nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-controls="mainNav"
+    @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <ul class="menu__list list-unstyled">
         <li class="menu__item">
-        <a class="menu__link" href="/fr/article1.html">1er livre Harry Potter</a>
+        <a class="menu__link" href="/fr/article1.html">1er LIVRE HARRY POTTER</a>
         </li>
         <li class="menu__item">
-        <a class="menu__link" href="/fr/article2.html">1er film Harry Potter</a>
+        <a class="menu__link" href="/fr/article2.html">1er FILM HARRY POTTER</a>
         </li>
         <li class="menu__item">
-        <a class="menu__link" href="/fr/article3.html">Musique « le prologue »</a>
+        <a class="menu__link" href="/fr/article3.html">LA SIGNATURE MUSICALE</a>
         </li>
         <li class="menu__item">
-        <a class="menu__link" href="/fr/article4.html">Chris Columbus</a>
+        <a class="menu__link" href="/fr/article4.html">CHRIS COLUMBUS</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="/fr/article5.html">Réplique</a>
+            <a class="menu__link" href="/fr/article5.html">UNE RÉPLIQUE CULTE</a>
         </li>
         <li class="menu__item">
-        <a class="menu__link" href="/fr/article6.html">J.K.Rowling</a>
+        <a class="menu__link" href="/fr/article6.html">L'AUTRICE : J.K.ROWLING</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="/fr/article7.html">John Williams</a>
+            <a class="menu__link" href="/fr/article7.html">JOHN WILLIAMS</a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="/fr/a-propos.html">À propos</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+            <a class="menu__link" href="/fr/glossaire.html">GLOSSAIRE</a>
         </li>
     </ul>
-</nav>
+    </nav>
 </div>
 </header>
 <main>
@@ -110,7 +107,7 @@
         </em>
         <p class="projects__legend">SHERMAN LEGENDS - Éthan Schmitt</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -124,7 +121,7 @@
         </em>
         <p class="projects__legend">DOBBY EST LIBRE - Benjamin Bisch</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -138,7 +135,7 @@
         </em>
         <p class="projects__legend">LIFE FINDS A WAY - Romain Grosjean</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -152,7 +149,7 @@
         </em>
         <p class="projects__legend">BIBLIOTHÈQUE DE MAGIE - Edouard Hashimoto</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -166,7 +163,7 @@
         </em>
         <p class="projects__legend">ENDLESS REBIRTH - Maxence Lallemand</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -179,7 +176,7 @@
         </em> 
         <p class="projects__legend">INSTANT CLÉ - Océane Robert</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -193,7 +190,7 @@
         </em>
         <p class="projects__legend">KULTURE - Claude Malanda</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -206,7 +203,7 @@
         </em>
         <p class="projects__legend">ON N'A PAS BESOIN DE ROUTE - Mélissa Poilâne</p>
         <div class="parent__container">
-            <div class="projects__button">Voir plus en détails</div>
+            <div class="projects__button">Voir plus</div>
         </div>
         </a>
     </div>
@@ -229,12 +226,13 @@
     </div>
     <div class="footer__form">
         <h4 class="footer__title">Contact</h4>
-        <p class="footer__text">
+        <div class="footer__text">
             <a href="mailto:hugo.collin@edu.univ-fcomte.com"><u>hugo.collin@edu.univ-fcomte.com</u></a><br>
             +33 6 45 12 54 80<br>
             4 Place Tharradin, 25200 Montbéliard, France<br>
-            <a href="/fr/contact.html"><u>Contactez-nous !</u></a>
-        </p>
+            <a href="/fr/contact.html"><u>Contactez-nous !</u></a><br>
+            <a href="/fr/a-propos.html"><u>À propos de moi</u>
+        </div>
     </div>
     <div class="footer__social">
         <h4 class="footer__title">Suivez-nous</h4>

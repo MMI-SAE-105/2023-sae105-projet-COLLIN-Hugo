@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--couleur-des-articles);
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .footer__start-img {
     margin-left: 1rem;
@@ -11,7 +11,7 @@
     font-size: var(--body-2);
     color: var(--blanc);
     margin-block-end: 50px;
-    margin-left: 7rem;
+    text-align: center;
     margin-top: -3rem;
 }
 .footer__title {
@@ -26,13 +26,11 @@
     font-size: var(--body-3);
     margin-top: -3rem;
     margin-left: 1rem;
-    margin-right: 1rem;
-    text-decoration: none;
+    list-style: none;
 }
 .footer__liste {
     display: flex;
     gap: 1rem;
-    margin-left: 1rem;
     margin-top: -30px;
 }
 .footer__end {
